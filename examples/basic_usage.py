@@ -9,8 +9,11 @@ sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from cgmm import CGMM  # Changed from CGGM to CGMM
 
-# Hardcode API key for testing (NOT for production!)
-api_key = "yourapikeyhere" "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"
+# Load API key from environment variable
+load_dotenv()
+api_key = os.getenv("OPENAI_API_KEY")
+if not api_key:
+    raise ValueError("Please set OPENAI_API_KEY environment variable")
 
 
 # Initialize CGMM
