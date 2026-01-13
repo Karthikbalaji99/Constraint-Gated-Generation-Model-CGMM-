@@ -1,0 +1,1026 @@
+[
+  {
+    "test_id": 1,
+    "test_name": "Lease Classification - No Info",
+    "query": "Should this lease be classified as finance or operating?",
+    "facts_provided": 0,
+    "models": {
+      "GPT-5": {
+        "response": {
+          "model": "gpt-5",
+          "answer": "I don\u2019t have enough information to classify the lease. Lease classification depends on specific terms. Could you share the key details below?\n\n- Lease term: noncancelable term and any renewal/termination options reasonably certain to be exercised\n- Underlying asset: type and its economic useful life\n- Transfer of ownership: does ownership transfer to the lessee by end of term?\n- Purchase option: is there a purchase option that the lessee is reasonably certain to exercise? If so, is it at a bargain price?\n- Present value: PV of fixed lease payments (and any likely residual value guarantees) compared to the asset\u2019s fair value at commencement; discount rate used (rate implicit in the lease, if known, or lessee\u2019s incremental borrowing rate)\n- Specialized nature: is the asset so specialized that it has no alternative use to the lessor at the end of the term?\n- Residual value guarantees or variable payments\n- For IFRS vs US GAAP: which framework applies?\n\nWith these, I can apply the classification tests:\n- US GAAP ASC 842: finance if any of the five criteria are met; otherwise operating.\n- IFRS 16: similar tests (finance vs operating distinction applies only to lessors; for lessees, most leases are finance unless short-term/low-value exemptions\u2014confirm which party you are).\n\nPlease provide the above details and whether you\u2019re the lessee or lessor.",
+          "made_assumptions": false,
+          "asked_questions": true,
+          "refused_to_answer": false
+        },
+        "analysis": {
+          "model": "gpt-5",
+          "status": "ANSWERED",
+          "made_assumptions": false,
+          "asked_questions": true,
+          "structured_output": false,
+          "missing_constraints_listed": false,
+          "actionable_next_steps": true
+        }
+      },
+      "GPT-4o": {
+        "response": {
+          "model": "gpt-4o",
+          "answer": "To determine whether a lease should be classified as a finance lease or an operating lease, you need to evaluate it against specific criteria. According to the accounting standards such as IFRS 16 or ASC 842, a lease is classified as a finance lease if it meets any of the following criteria:\n\n1. **Transfer of Ownership**: The lease transfers ownership of the underlying asset to the lessee by the end of the lease term.\n2. **Purchase Option**: The lease grants the lessee an option to purchase the underlying asset that the lessee is reasonably certain to exercise.\n3. **Lease Term**: The lease term is for the major part of the economic life of the underlying asset, even if title is not transferred.\n4. **Present Value**: The present value of the lease payments amounts to at least substantially all of the fair value of the underlying asset.\n5. **Specialized Nature**: The underlying asset is of such a specialized nature that only the lessee can use it without major modifications.\n\nIf none of these criteria are met, the lease is typically classified as an operating lease.\n\nTo provide a definitive classification, I would need more information about the specific terms and conditions of the lease in question. Could you provide details on aspects such as the lease term, any purchase options, the economic life of the asset, and the present value of lease payments relative to the asset's fair value?",
+          "made_assumptions": false,
+          "asked_questions": true,
+          "refused_to_answer": false
+        },
+        "analysis": {
+          "model": "gpt-4o",
+          "status": "ANSWERED",
+          "made_assumptions": false,
+          "asked_questions": true,
+          "structured_output": false,
+          "missing_constraints_listed": false,
+          "actionable_next_steps": true
+        }
+      },
+      "Claude 4.5 Sonnet": {
+        "response": {
+          "model": "claude-4.5-sonnet",
+          "answer": "I need more information to properly classify this lease as finance or operating. Please provide details about the lease, such as:\n\n1. **Lease term** - How long is the lease period, and what is the asset's useful life?\n\n2. **Ownership transfer** - Does ownership transfer to the lessee at the end of the lease term?\n\n3. **Purchase option** - Is there a bargain purchase option the lessee is reasonably certain to exercise?\n\n4. **Present value** - What is the present value of lease payments relative to the asset's fair value? (Generally, \u226590% suggests finance lease)\n\n5. **Asset specialization** - Is the asset so specialized that it has no alternative use to the lessor at lease end?\n\n6. **Lease payments vs. fair value** - What are the total lease payments compared to the asset's fair value?\n\n7. **Accounting standards** - Are you using US GAAP (ASC 842) or IFRS 16?\n\nUnder **US GAAP (ASC 842)**, a lease is classified as finance if it meets any one of five criteria. Under **IFRS 16**, most leases are treated similarly to finance leases (with exceptions for short-term and low-value assets).\n\nPlease share the lease agreement details or specific terms, and I'll help you determine the proper classification.",
+          "made_assumptions": false,
+          "asked_questions": true,
+          "refused_to_answer": false
+        },
+        "analysis": {
+          "model": "claude-4.5-sonnet",
+          "status": "ANSWERED",
+          "made_assumptions": false,
+          "asked_questions": true,
+          "structured_output": false,
+          "missing_constraints_listed": false,
+          "actionable_next_steps": true
+        }
+      },
+      "Gemini 2.5 Flash": {
+        "response": {
+          "model": "gemini-2.5-flash",
+          "answer": "To classify a lease as finance or operating, we need to apply the criteria outlined in the relevant accounting standards. The two primary standards are **IFRS 16 (Leases)** and **ASC 842 (Leases)** (US GAAP).\n\nBoth standards aim to identify if the lease effectively transfers substantially all the risks and rewards incidental to ownership of the underlying asset to the lessee.\n\n**Under both IFRS 16 and ASC 842, a lease is classified as a FINANCE LEASE (for the lessee) if it meets ANY ONE of the following five criteria:**\n\n1.  **Transfer of Ownership:** The lease transfers ownership of the underlying asset to the lessee by the end of the lease term.\n2.  **Purchase Option:** The lease grants the lessee an option to purchase the underlying asset that the lessee is reasonably certain to exercise.\n3.  **Lease Term Test:** The lease term is for a major part of the economic life of the underlying asset.\n    *   **ASC 842 Specific Threshold:** Generally considered to be **75% or more** of the economic life.\n    *   **IFRS 16:** No specific percentage, but \"major part\" implies a significant portion.\n4.  **Present Value Test:** The present value of the lease payments amounts to substantially all of the fair value of the underlying asset.\n    *   **ASC 842 Specific Threshold:** Generally considered to be **90% or more** of the fair value.\n    *   **IFRS 16:** No specific percentage, but \"substantially all\" implies a very high percentage.\n5.  **Specialized Asset:** The underlying asset is of such a specialized nature that it is expected to have no alternative use to the lessor at the end of the lease term.\n\n**If NONE of these criteria are met, the lease is classified as an OPERATING LEASE.**\n\n---\n\n**To help me classify *this specific lease*, please provide the following information:**\n\n1.  **Lease Term:** How many years/months is the lease for?\n2.  **Economic Life of the Asset:** What is the estimated total useful life of the asset (e.g., 10 years for a machine)?\n3.  **Fair Value of the Asset:** What is the current fair market value of the asset at the commencement of the lease?\n4.  **Lease Payments:**\n    *   What are the fixed lease payments per period (e.g., $1,000/month)?\n    *   Are there any variable lease payments (and how are they determined)?\n    *   Are there any residual value guarantees by the lessee? If so, what is the amount?\n    *   Are there any initial direct costs paid by the lessee?\n5.  **Purchase Option:**\n    *   Is there an option to purchase the asset at the end of the lease?\n    *   If so, what is the purchase price?\n    *   Is it reasonably certain that the lessee will exercise this option (e.g., the purchase price is significantly below expected market value)?\n6.  **Transfer of Ownership:** Does the lease contract explicitly state that ownership transfers to the lessee at the end of the lease term?\n7.  **Specialized Asset:** Is the asset highly customized or specialized for the lessee's specific use, making it difficult for another entity to use it without significant modification?\n8.  **Discount Rate:** What is the implicit interest rate in the lease (if known by the lessee)? If not, what is the lessee's incremental borrowing rate?\n9.  **Residual Value:** What is the estimated residual value of the asset at the end of the lease term (unguaranteed)?\n\nOnce I have this information, I can apply the criteria and tell you whether it's a finance or operating lease.",
+          "made_assumptions": false,
+          "asked_questions": true,
+          "refused_to_answer": false
+        },
+        "analysis": {
+          "model": "gemini-2.5-flash",
+          "status": "ANSWERED",
+          "made_assumptions": false,
+          "asked_questions": true,
+          "structured_output": false,
+          "missing_constraints_listed": false,
+          "actionable_next_steps": true
+        }
+      },
+      "DeepSeek V3.1": {
+        "response": {
+          "model": "deepseek-v3.1",
+          "answer": "Of course. This is a fundamental accounting question. I cannot give a definitive answer for a specific lease without seeing the contract details, but I can provide a clear, step-by-step explanation of **how to classify a lease** under current accounting standards (IFRS 16 and ASC 842).\n\nThe short answer is: **If the lease meets *any one* of several specific criteria, it is a finance lease (under ASC 842) or a \"lease\" (under IFRS 16). If it meets *none* of them, it is an operating lease.**\n\nHere is the detailed framework to determine the classification.\n\n---\n\n### The 5 Key Tests for Lease Classification (ASC 842 & IFRS 16)\n\nA lease is classified as a **Finance Lease** (the lessee effectively takes on the risks and rewards of ownership) if it meets **any one** of the following five criteria:\n\n1.  **Transfer of Ownership:** The lease transfers ownership of the underlying asset to the lessee by the end of the lease term.\n    *   *Example: A 5-year car lease with a \"$1 buyout\" option at the end.*\n\n2.  **Purchase Option:** The lease grants the lessee an option to purchase the underlying asset that the lessee is reasonably certain to exercise.\n    *   *Example: The lease allows the lessee to buy the equipment for $10,000 at the end of the term, but its expected fair market value will be $50,000. It's a no-brainer to exercise the option.*\n\n3.  **Lease Term:** The lease term is for the **major part** of the remaining economic life of the underlying asset. (Note: \"Major part\" is typically interpreted as **75% or more**).\n    *   *Example: Leasing a piece of manufacturing equipment with a useful life of 10 years for an 8-year term.*\n\n4.  **Present Value:** The **present value of the sum of the lease payments** equals or exceeds **substantially all** of the fair value of the underlying asset. (Note: \"Substantially all\" is typically interpreted as **90% or more**).\n    *   *This is often the most critical test.* You need to calculate the PV using the interest rate implicit in the lease (if readily determinable) or the lessee's incremental borrowing rate.\n    *   *Example: You lease a new server rack with a fair value of $100,000. The present value of all your lease payments is $92,000. This is >90%, so it's a finance lease.*\n\n5.  **Specialized Asset:** The underlying asset is of such a specialized nature that it is expected to have no alternative use to the lessor at the end of the lease term.\n    *   *Example: Leasing a custom-built machine designed specifically for your factory's unique production line. The lessor couldn't easily lease or sell it to anyone else.*\n\n**If NONE of the above criteria are met,** the lease is classified as an **Operating Lease**.\n\n---\n\n### Quick Decision Flowchart\n\n```mermaid\nflowchart TD\nA[Start Lease Classification] --> B{Does the lease...?};\nB -- Yes --> C[-> Finance Lease];\nB -- No --> D{Next Criterion?};\n    \nD -- \"Meet any of the 5 criteria?\" --> B;\n\nsubgraph B[5 Key Criteria]\n    direction LR\n    B1[Transfer ownership?]\n    B2[Cheap purchase option?]\n    B3[Term \u2265 75% of asset's life?]\n    B4[PV of payments \u2265 90% of fair value?]\n    B5[Asset is highly specialized?]\nend\n\nD -- \"No to ALL criteria\" --> E[-> Operating Lease];\n```\n\n### Practical Implications of the Classification\n\n| Aspect | Finance Lease | Operating Lease |\n| :--- | :--- | :--- |\n| **Balance Sheet** | **Yes.** Records a **Right-of-Use (ROU) Asset** and a corresponding **Lease Liability**. | **Yes.** Also records an ROU Asset and Lease Liability. *(Under old rules, operating leases were off-balance sheet, but this changed with ASC 842/IFRS 16).* |\n| **Income Statement** | **Front-loaded expense.** Interest expense on the liability + amortization of the asset. Total expense decreases over time. | **Straight-line expense.** Single lease expense is recognized evenly over the lease term. |\n| **Cash Flow Statement** | **Split.** Repayment of the lease liability principal is a **financing cash flow**. Interest portion is an **operating cash flow**. | **Entirely Operating.** All lease payments are recorded as operating cash outflows. |\n| **Key Ratios** | **Higher Leverage:** Appears due to the new liability. **Lower ROA/ROE:** Initially due to the new asset. | **Lower Leverage:** Liability is typically smaller. Expense pattern is flat. |\n\n### How to Apply This to Your Lease\n\n1.  **Gather the lease contract.**\n2.  **Check for Criterion 1 & 2:** Does the lease transfer ownership or have a bargain purchase option?\n3.  **Check for Criterion 3:** Compare the lease term to the total economic life of the asset.\n4.  **Check for Criterion 4 (The Big One):**\n    *   Find the fair value of the asset (often in the contract or can be estimated).\n    *   List all lease payments (fixed payments, less incentives, plus guaranteed residual value).\n    *   Determine the appropriate discount rate.\n    *   Calculate the present value of the payments.\n    *   Compare the PV to the asset's fair value. Is it >= 90%?\n5.  **Check for Criterion 5:** Is the asset built to your unique specifications and useless to anyone else?\n\n**Conclusion:** Based on the outcome of these tests, you can classify the lease. The **90% PV test** is very common for tipping a lease into the finance category, so pay close attention to that calculation.\n\n***Disclaimer:*** *This information is for educational purposes only and does not constitute accounting advice. You should consult with a qualified accountant or CPA to analyze your specific lease agreement.*",
+          "made_assumptions": false,
+          "asked_questions": true,
+          "refused_to_answer": true
+        },
+        "analysis": {
+          "model": "deepseek-v3.1",
+          "status": "REFUSED",
+          "made_assumptions": false,
+          "asked_questions": true,
+          "structured_output": false,
+          "missing_constraints_listed": false,
+          "actionable_next_steps": true
+        }
+      },
+      "Llama 3.3 70B": {
+        "response": {
+          "model": "meta-llama-3-70b-instruct",
+          "answer": "I'm happy to help! However, to provide a safe and accurate answer, I need more information about the lease. Could you please provide me with the following details:\n\n1. What type of asset is being leased (e.g., vehicle, equipment, real estate)?\n2. What are the lease terms, including the lease duration and payment schedule?\n3. Are there any options to purchase the asset at the end of the lease term? If so, what are the conditions and costs associated with exercising those options?\n4. Is the lease cancelable or non-cancelable?\n5. What is the estimated economic life of the asset being leased?\n\nWith this information, I can help you determine whether the lease should be classified as a finance lease or an operating lease according to the relevant accounting standards.",
+          "made_assumptions": false,
+          "asked_questions": true,
+          "refused_to_answer": false
+        },
+        "analysis": {
+          "model": "meta-llama-3-70b-instruct",
+          "status": "ANSWERED",
+          "made_assumptions": false,
+          "asked_questions": true,
+          "structured_output": false,
+          "missing_constraints_listed": false,
+          "actionable_next_steps": true
+        }
+      },
+      "CGMM": {
+        "response": "status='BLOCKED' reason='Insufficient information to produce a valid answer' missing_constraints=[{'variable': 'lease_term', 'type': 'existence', 'description': 'The duration of the lease agreement', 'critical': True, 'reference': None}, {'variable': 'lease_payments', 'type': 'existence', 'description': 'The total amount of payments to be made over the lease term', 'critical': True, 'reference': None}, {'variable': 'asset_fair_value', 'type': 'existence', 'description': 'The fair value of the leased asset', 'critical': True, 'reference': None}, {'variable': 'interest_rate_implicit_in_lease', 'type': 'existence', 'description': 'The interest rate implicit in the lease, if determinable', 'critical': True, 'reference': None}, {'variable': 'lessee_incremental_borrowing_rate', 'type': 'existence', 'description': \"The lessee's incremental borrowing rate if the implicit rate is not determinable\", 'critical': True, 'reference': None}, {'variable': 'ownership_transfer', 'type': 'existence', 'description': 'Whether ownership of the asset transfers to the lessee by the end of the lease term', 'critical': True, 'reference': None}, {'variable': 'purchase_option', 'type': 'existence', 'description': 'Whether the lease includes a purchase option that is reasonably certain to be exercised', 'critical': True, 'reference': None}, {'variable': 'lease_classification_criteria', 'type': 'existence', 'description': 'The criteria used to classify leases under the applicable accounting standards (e.g., IFRS 16, ASC 842)', 'critical': True, 'reference': None}, {'variable': 'lease_term_vs_economic_life', 'type': 'threshold', 'description': 'Comparison of the lease term to the economic life of the asset', 'critical': True, 'reference': None}, {'variable': 'present_value_of_lease_payments_vs_fair_value', 'type': 'threshold', 'description': 'Comparison of the present value of lease payments to the fair value of the asset', 'critical': True, 'reference': None}, {'variable': 'accounting_standard', 'type': 'choice', 'description': 'The accounting standard being applied (e.g., IFRS, GAAP)', 'critical': True, 'reference': None, 'options': ['IFRS 16', 'ASC 842', 'Other']}] explanation=\"Cannot safely answer 'Should this lease be classified as finance or operating?' because the following critical information is missing: lease_term, lease_payments, asset_fair_value, interest_rate_implicit_in_lease, lessee_incremental_borrowing_rate, ownership_transfer, purchase_option, lease_classification_criteria, lease_term_vs_economic_life, present_value_of_lease_payments_vs_fair_value, accounting_standard. Please provide these values to proceed.\" suggested_actions=['Provide value for lease_term', 'Provide value for lease_payments', 'Provide value for asset_fair_value', 'Provide value for interest_rate_implicit_in_lease', 'Provide value for lessee_incremental_borrowing_rate', 'Provide value for ownership_transfer', 'Provide value for purchase_option', 'Provide value for lease_classification_criteria', 'Provide value for lease_term_vs_economic_life', 'Provide value for present_value_of_lease_payments_vs_fair_value', 'Select accounting_standard from: IFRS 16, ASC 842, Other'] query_original='Should this lease be classified as finance or operating?' facts_original={}",
+        "analysis": {
+          "model": "CGMM",
+          "status": "BLOCKED",
+          "made_assumptions": false,
+          "asked_questions": true,
+          "structured_output": true,
+          "missing_constraints_listed": true,
+          "actionable_next_steps": true
+        }
+      }
+    }
+  },
+  {
+    "test_id": 2,
+    "test_name": "Lease Classification - Partial Info",
+    "query": "Should this lease be classified as finance or operating?",
+    "facts_provided": 2,
+    "models": {
+      "GPT-5": {
+        "response": {
+          "model": "gpt-5",
+          "answer": "I don\u2019t have enough information to conclude definitively, but here\u2019s what we can say from what you\u2019ve provided.\n\nOne of the finance vs. operating lease tests compares the lease term to the asset\u2019s economic life:\n- Under US GAAP (ASC 842), a lease is finance if the lease term is for a major part of the remaining economic life of the asset. While ASC 842 doesn\u2019t prescribe a bright line, practice often uses about 75% as an indicator.\n- Your figures: lease_term = 84 months, economic life = 96 months. 84/96 = 87.5%, which exceeds the common 75% indicator. This suggests the lease likely meets the \u201cmajor part of economic life\u201d criterion for a finance lease.\n\nHowever, classification requires evaluating all criteria. To classify conclusively, please provide:\n- Transfer of ownership at end of term? (Yes/No)\n- Purchase option that is reasonably certain to be exercised? (Yes/No)\n- Present value of lease payments is substantially all of the asset\u2019s fair value? Provide PV of lease payments and asset fair value, or confirm if it meets the \u201csubstantially all\u201d threshold (often ~90% in practice).\n- The asset is of such a specialized nature that it has no alternative use to the lessor after the term? (Yes/No)\n- Is there any non-cancellable period plus reasonably certain renewal options included in the 84 months? Confirm that 84 months represents the lease term per ASC 842 (including renewal options that are reasonably certain).\n\nIf the only criterion considered is the \u201cmajor part of economic life,\u201d then based solely on 84/96 = 87.5%, the lease would be classified as a finance lease. But I need the additional points above to confirm classification overall.",
+          "made_assumptions": false,
+          "asked_questions": true,
+          "refused_to_answer": false
+        },
+        "analysis": {
+          "model": "gpt-5",
+          "status": "ANSWERED",
+          "made_assumptions": false,
+          "asked_questions": true,
+          "structured_output": false,
+          "missing_constraints_listed": false,
+          "actionable_next_steps": true
+        }
+      },
+      "GPT-4o": {
+        "response": {
+          "model": "gpt-4o",
+          "answer": "To determine whether a lease should be classified as a finance lease or an operating lease, we need to consider several criteria. One of the criteria is the lease term in relation to the asset's economic life. \n\nBased on the information provided:\n\n- **Lease Term**: 84 months\n- **Asset Economic Life**: 96 months\n\nOne common criterion for classifying a lease as a finance lease is if the lease term is for the major part of the economic life of the asset. A typical threshold used is 75% or more of the asset's economic life.\n\nLet's calculate the percentage of the asset's economic life that the lease term represents:\n\n\\[\n\\text{Percentage of Economic Life} = \\left(\\frac{\\text{Lease Term}}{\\text{Asset Economic Life}}\\right) \\times 100 = \\left(\\frac{84}{96}\\right) \\times 100 \\approx 87.5\\%\n\\]\n\nSince 87.5% is greater than 75%, this criterion suggests that the lease could be classified as a finance lease.\n\nHowever, to make a complete determination, you would also need to consider other criteria, such as:\n\n1. Transfer of ownership at the end of the lease term.\n2. Option to purchase the asset at a price significantly lower than fair market value.\n3. Present value of lease payments amounts to substantially all of the asset's fair value.\n4. The asset is of such a specialized nature that only the lessee can use it without major modifications.\n\nIf any of these other criteria are met, the lease would also be classified as a finance lease. If none of these criteria are met, it would be classified as an operating lease.\n\nWithout additional information on these other criteria, I can only provide guidance based on the lease term and economic life. If you have more details on the other criteria, please provide them for a more comprehensive assessment.",
+          "made_assumptions": false,
+          "asked_questions": false,
+          "refused_to_answer": false
+        },
+        "analysis": {
+          "model": "gpt-4o",
+          "status": "ANSWERED",
+          "made_assumptions": false,
+          "asked_questions": false,
+          "structured_output": false,
+          "missing_constraints_listed": false,
+          "actionable_next_steps": false
+        }
+      },
+      "Claude 4.5 Sonnet": {
+        "response": {
+          "model": "claude-4.5-sonnet",
+          "answer": "I need more information to properly classify this lease as finance or operating under ASC 842 (or IFRS 16 if applicable).\n\n## What I know:\n- Lease term: 84 months (7 years)\n- Asset economic life: 96 months (8 years)\n- Lease term is **87.5% of economic life**\n\n## What I need to know:\n\nTo classify this lease, I must evaluate **five criteria** (ASC 842). I can only assess one so far:\n\n**1. Transfer of ownership** - Does ownership transfer to lessee at end? \u2753\n\n**2. Purchase option** - Is there a bargain purchase option the lessee is reasonably certain to exercise? \u2753\n\n**3. Lease term** - Does lease term cover major part (\u226575% typically) of economic life? \n   - \u2713 **87.5% suggests YES** - this alone may indicate finance lease\n\n**4. Present value test** - Does PV of lease payments equal/exceed substantially all (\u226590%) of fair value? \u2753\n   - Need: lease payments, discount rate, asset fair value\n\n**5. Specialized asset** - Is the asset so specialized it has no alternative use? \u2753\n\n## My assessment:\n\nBased **only** on the lease term test (87.5% > 75%), this would likely be a **FINANCE LEASE**.\n\nHowever, I should verify:\n- Are any other criteria met?\n- What are the lease payment amounts and present value?\n- Is there a purchase option?\n\n**Would you like to provide any of this additional information for a complete analysis?**",
+          "made_assumptions": false,
+          "asked_questions": true,
+          "refused_to_answer": false
+        },
+        "analysis": {
+          "model": "claude-4.5-sonnet",
+          "status": "ANSWERED",
+          "made_assumptions": false,
+          "asked_questions": true,
+          "structured_output": false,
+          "missing_constraints_listed": false,
+          "actionable_next_steps": true
+        }
+      },
+      "Gemini 2.5 Flash": {
+        "response": {
+          "model": "gemini-2.5-flash",
+          "answer": "Based solely on the information provided, this lease would likely be classified as a **finance lease**.\n\nHere's why:\n\n1.  **Calculate the Lease Term as a Percentage of Economic Life:**\n    *   Lease Term: 84 months\n    *   Asset Economic Life: 96 months\n    *   Percentage: (84 / 96) = 0.875 or **87.5%**\n\n2.  **Apply Lease Classification Criteria (IFRS 16 / ASC 842):**\n    *   One of the key criteria for a lease to be classified as a finance lease (for the lessee) is if the **lease term covers a major part of the economic life of the underlying asset.**\n    *   Under both IFRS 16 and ASC 842, a \"major part\" is generally considered to be **75% or more** of the asset's economic life (though IFRS 16 doesn't provide a bright line, 75% is a common practical threshold).\n    *   Since 87.5% is greater than 75%, this criterion is met.\n\n**Conclusion:**\n\nBecause the lease term (84 months) represents a major part (87.5%) of the asset's economic life (96 months), it indicates that substantially all the risks and rewards of ownership are transferred to the lessee. Therefore, this lease would be classified as a **finance lease**.\n\n**Important Note:** This conclusion is based *only* on the two facts provided. A complete lease classification would also consider other factors, such as:\n\n*   Whether ownership of the asset transfers to the lessee by the end of the lease term.\n*   Whether the lessee has an option to purchase the asset at a price that is expected to be significantly lower than the fair value at the date the option becomes exercisable (bargain purchase option).\n*   Whether the present value of the lease payments amounts to substantially all of the fair value of the underlying asset (generally 90% or more).\n*   Whether the asset is of such a specialized nature that only the lessee can use it without major modifications.\n\nIf any one of these criteria is met, the lease is classified as a finance lease. In this case, the \"major part of economic life\" criterion is clearly met.",
+          "made_assumptions": false,
+          "asked_questions": false,
+          "refused_to_answer": false
+        },
+        "analysis": {
+          "model": "gemini-2.5-flash",
+          "status": "ANSWERED",
+          "made_assumptions": false,
+          "asked_questions": false,
+          "structured_output": false,
+          "missing_constraints_listed": false,
+          "actionable_next_steps": false
+        }
+      },
+      "DeepSeek V3.1": {
+        "response": {
+          "model": "deepseek-v3.1",
+          "answer": "Let\u2019s break this down step by step.  \n\n---\n\n**1. Relevant IFRS 16 criteria for finance lease classification**  \nUnder IFRS 16, a lease is a finance lease if it transfers substantially all the risks and rewards incidental to ownership of the asset. Indicators include:  \n\n- Lease term is for the **major part** of the asset\u2019s economic life.  \n- Present value of lease payments amounts to **substantially all** of the fair value of the asset.  \n- Option to purchase asset at end of lease at expected bargain price.  \n- Etc.  \n\n---\n\n**2. Applying the \u201cmajor part of the economic life\u201d test**  \n- Asset economic life = 96 months  \n- Lease term = 84 months  \n\n\\[\n\\frac{84}{96} = 0.875 \\quad \\text{(87.5\\%)}\n\\]\n\nIFRS does not specify a bright-line percentage, but in practice, **75% or more** is often considered \u201cthe major part\u201d of the asset\u2019s economic life.  \n\nHere, **87.5%** is well above that typical threshold.  \n\n---\n\n**3. Conclusion based solely on term vs. life**  \nGiven no other information about PV of lease payments vs. fair value, the lease term being 87.5% of the asset\u2019s life strongly indicates a **finance lease**.  \n\n---\n\n**Final answer:**  \n\\[\n\\boxed{\\text{Finance lease}}\n\\]",
+          "made_assumptions": false,
+          "asked_questions": false,
+          "refused_to_answer": false
+        },
+        "analysis": {
+          "model": "deepseek-v3.1",
+          "status": "ANSWERED",
+          "made_assumptions": false,
+          "asked_questions": false,
+          "structured_output": false,
+          "missing_constraints_listed": false,
+          "actionable_next_steps": false
+        }
+      },
+      "Llama 3.3 70B": {
+        "response": {
+          "model": "meta-llama-3-70b-instruct",
+          "answer": "I'm happy to help! However, I need more information to determine whether this lease should be classified as finance or operating.\n\nThe lease term and asset economic life are important factors, but I also need to know other details to make a safe classification. Specifically, I would like to know:\n\n1. What is the lease's purchase option? Is it reasonably certain that the lessee will exercise the option?\n2. What is the present value of the lease payments? Is it substantially all of the fair value of the underlying asset?\n3. Does the lease transfer ownership of the underlying asset to the lessee by the end of the lease term?\n\nWithout this additional information, I cannot safely classify the lease as finance or operating. Can you provide more details or clarify these points?",
+          "made_assumptions": false,
+          "asked_questions": true,
+          "refused_to_answer": true
+        },
+        "analysis": {
+          "model": "meta-llama-3-70b-instruct",
+          "status": "REFUSED",
+          "made_assumptions": false,
+          "asked_questions": true,
+          "structured_output": false,
+          "missing_constraints_listed": false,
+          "actionable_next_steps": true
+        }
+      },
+      "CGMM": {
+        "response": "status='BLOCKED' reason='Insufficient information to produce a valid answer' missing_constraints=[{'variable': 'lease_payments_present_value', 'type': 'existence', 'description': 'The present value of lease payments', 'critical': True, 'reference': None}, {'variable': 'asset_fair_value', 'type': 'existence', 'description': 'The fair value of the leased asset', 'critical': True, 'reference': None}, {'variable': 'bargain_purchase_option', 'type': 'existence', 'description': 'Whether there is an option to purchase the asset at a bargain price', 'critical': True, 'reference': None}, {'variable': 'ownership_transfer', 'type': 'existence', 'description': 'Whether ownership of the asset transfers to the lessee by the end of the lease term', 'critical': True, 'reference': None}, {'variable': 'lease_term_to_economic_life_ratio', 'type': 'threshold', 'description': 'The ratio of lease term to the economic life of the asset', 'critical': True, 'reference': None}, {'variable': 'present_value_to_fair_value_ratio', 'type': 'threshold', 'description': 'The ratio of the present value of lease payments to the fair value of the asset', 'critical': True, 'reference': None}] explanation=\"Cannot safely answer 'Should this lease be classified as finance or operating?' because the following critical information is missing: lease_payments_present_value, asset_fair_value, bargain_purchase_option, ownership_transfer, lease_term_to_economic_life_ratio, present_value_to_fair_value_ratio. Please provide these values to proceed.\" suggested_actions=['Provide value for lease_payments_present_value', 'Provide value for asset_fair_value', 'Provide value for bargain_purchase_option', 'Provide value for ownership_transfer', 'Provide value for lease_term_to_economic_life_ratio', 'Provide value for present_value_to_fair_value_ratio'] query_original='Should this lease be classified as finance or operating?' facts_original={'lease_term': 84, 'asset_economic_life': 96}",
+        "analysis": {
+          "model": "CGMM",
+          "status": "BLOCKED",
+          "made_assumptions": false,
+          "asked_questions": true,
+          "structured_output": true,
+          "missing_constraints_listed": true,
+          "actionable_next_steps": true
+        }
+      }
+    }
+  },
+  {
+    "test_id": 3,
+    "test_name": "Revenue Recognition",
+    "query": "Can we recognize revenue for this software contract?",
+    "facts_provided": 0,
+    "models": {
+      "GPT-5": {
+        "response": {
+          "model": "gpt-5",
+          "answer": "I don\u2019t have enough information to determine revenue recognition yet.\n\nTo assess whether you can recognize revenue for a software contract (e.g., under IFRS 15 or ASC 606), I\u2019ll need details on the following:\n\n1) Contract overview\n- What is the contract price and term?\n- Is there a written, approved contract with enforceable rights and payment terms?\n- Any variable consideration (usage-based fees, bonuses, penalties, discounts, refunds)?\n\n2) Performance obligations\n- What exactly is being sold: on\u2011premise license, SaaS/subscription, implementation, customization, training, support, updates, hosting?\n- Are these bundled or distinct? Are customizations essential to the software\u2019s functionality?\n\n3) Timing and transfer of control\n- For a license: is it right\u2011to\u2011use (point in time) or right\u2011to\u2011access (over time)?\n- For services/SaaS: over-time recognition method and measure of progress (e.g., time elapsed, milestones, input/output methods).\n\n4) Fees and collectibility\n- Is collectibility probable from the customer based on credit assessment and payment terms?\n- Any significant financing component (e.g., long payment terms, upfront fees)?\n\n5) Variable/contract modifications and incentives\n- Any usage-based fees, price concessions, service-level credits, or termination rights?\n- Any contract modifications, renewals, or options for additional goods/services (material rights)?\n\n6) Deliverables status\n- What has been delivered to date?\n- Any formal customer acceptance criteria and has acceptance been obtained?\n\n7) Standalone selling prices and allocation\n- If multiple performance obligations exist, what are their standalone selling prices for allocation?\n\nIf you share these specifics (even a summary), I can help determine:\n- Whether revenue can be recognized now\n- The appropriate timing (point in time vs over time)\n- How to allocate and measure revenue\n- Any constraints on variable consideration or financing considerations",
+          "made_assumptions": false,
+          "asked_questions": true,
+          "refused_to_answer": false
+        },
+        "analysis": {
+          "model": "gpt-5",
+          "status": "ANSWERED",
+          "made_assumptions": false,
+          "asked_questions": true,
+          "structured_output": false,
+          "missing_constraints_listed": false,
+          "actionable_next_steps": true
+        }
+      },
+      "GPT-4o": {
+        "response": {
+          "model": "gpt-4o",
+          "answer": "To determine if you can recognize revenue for a software contract, you'll need to consider several key factors. Here are some questions to help clarify the situation:\n\n1. **Contract Terms**: What are the specific terms of the contract? Are there any conditions or milestones that need to be met before revenue can be recognized?\n\n2. **Performance Obligations**: Have all the performance obligations outlined in the contract been satisfied? This includes delivery of the software and any related services.\n\n3. **Revenue Recognition Standard**: Are you following a specific accounting standard, such as IFRS 15 or ASC 606? These standards have specific criteria for revenue recognition.\n\n4. **Payment Terms**: What are the payment terms of the contract? Have you received payment, or is it contingent on future events?\n\n5. **Customer Acceptance**: Has the customer accepted the software? Is there a formal acceptance process outlined in the contract?\n\n6. **Licensing Model**: Is the software sold as a perpetual license, a subscription, or another model? Different models may have different revenue recognition implications.\n\n7. **Significant Risks and Rewards**: Have the significant risks and rewards of ownership been transferred to the customer?\n\nIf you can provide more details on these aspects, I can help you further determine if revenue can be recognized for this software contract.",
+          "made_assumptions": false,
+          "asked_questions": true,
+          "refused_to_answer": false
+        },
+        "analysis": {
+          "model": "gpt-4o",
+          "status": "ANSWERED",
+          "made_assumptions": false,
+          "asked_questions": true,
+          "structured_output": false,
+          "missing_constraints_listed": false,
+          "actionable_next_steps": true
+        }
+      },
+      "Claude 4.5 Sonnet": {
+        "response": {
+          "model": "claude-4.5-sonnet",
+          "answer": "I need more information to help you determine if revenue can be recognized for this software contract. Please provide details about:\n\n## Contract Terms\n- What type of software is being provided? (SaaS, perpetual license, custom development, etc.)\n- What is the contract value and payment terms?\n- What is the contract duration/period?\n- Are there any acceptance criteria or milestones?\n\n## Performance Obligations\n- What specific deliverables or services are included?\n- Have you delivered the software/service to the customer?\n- Does the customer have access and control of the software?\n- Are there any ongoing obligations (support, updates, hosting)?\n\n## Revenue Recognition Framework\n- Which accounting standard applies to you? (ASC 606/IFRS 15, or another framework?)\n- What is your company's current revenue recognition policy for similar contracts?\n\n## Current Status\n- What stage is the contract at? (signed, delivered, implemented, accepted?)\n- Have any services been performed or products delivered?\n- Are there any contingencies or refund rights?\n\nWithout this information, I cannot safely advise on revenue recognition, as the answer depends heavily on the specific facts and circumstances of your situation. Revenue recognition rules are complex and making incorrect assumptions could lead to compliance issues.",
+          "made_assumptions": true,
+          "asked_questions": true,
+          "refused_to_answer": true
+        },
+        "analysis": {
+          "model": "claude-4.5-sonnet",
+          "status": "REFUSED",
+          "made_assumptions": true,
+          "asked_questions": true,
+          "structured_output": false,
+          "missing_constraints_listed": false,
+          "actionable_next_steps": true
+        }
+      },
+      "Gemini 2.5 Flash": {
+        "response": {
+          "model": "gemini-2.5-flash",
+          "answer": "Recognizing revenue for a software contract is governed by **ASC 606 (Revenue from Contracts with Customers)** in the US (and IFRS 15 internationally). It's not a simple \"yes\" or \"no\" and requires a detailed analysis using the **five-step model**.\n\nTo determine if you can recognize revenue, you need to provide specific details about \"this software contract.\" However, I can give you the framework and key questions to ask:\n\n---\n\n### The Five-Step Model for Revenue Recognition (ASC 606 / IFRS 15)\n\n**Step 1: Identify the Contract with a Customer**\n*   **Question:** Is there a valid contract?\n*   **Criteria:**\n    *   The parties have approved the contract and are committed to their obligations.\n    *   Each party's rights regarding the goods or services can be identified.\n    *   The payment terms for the goods or services can be identified.\n    *   The contract has commercial substance.\n    *   It is probable that the entity will collect the consideration to which it will be entitled.\n*   **Software Specifics:** This is usually straightforward for signed software licenses or SaaS agreements.\n\n**Step 2: Identify the Performance Obligations in the Contract**\n*   **Question:** What distinct goods or services is the company promising to deliver?\n*   **Criteria:** A good or service is distinct if:\n    *   The customer can benefit from the good or service on its own or together with other readily available resources.\n    *   The promise to transfer the good or service is separately identifiable from other promises in the contract.\n*   **Software Specifics (Common Performance Obligations):**\n    *   **Software License:**\n        *   **On-Premise (Perpetual):** Often a distinct performance obligation satisfied at a point in time (when the software is delivered and made available).\n        *   **On-Premise (Term-Based):** Could be over time if the customer is essentially \"renting\" the right to use for a period.\n        *   **SaaS (Software-as-a-Service):** This is typically a service, recognized over time as the customer simultaneously receives and consumes the benefits of accessing the software.\n    *   **Implementation/Integration Services:** Often distinct, recognized over time as services are performed.\n    *   **Customization/Development Services:** Can be distinct. If the customization significantly modifies the core software and the customer controls the asset being created, it might be recognized over time. If it's minor, it might be bundled with the license.\n    *   **Maintenance/Support (Post-Contract Support - PCS):** Includes updates, bug fixes, and help desk. Almost always a distinct performance obligation recognized over time (over the support period).\n    *   **Training Services:** Often distinct, recognized as training is delivered.\n    *   **Hosting Services (for SaaS):** This is part of the SaaS delivery, recognized over time.\n    *   **Hardware:** If bundled, it's a distinct performance obligation.\n\n**Step 3: Determine the Transaction Price**\n*   **Question:** What is the total amount of consideration the company expects to receive in exchange for transferring the promised goods or services?\n*   **Considerations:**\n    *   Fixed fees.\n    *   Variable consideration (e.g., usage-based fees, royalties, performance bonuses). If variable, you need to estimate it (either expected value or most likely amount) and only include it to the extent that it's highly probable a significant reversal will not occur.\n    *   Non-cash consideration.\n    *   Financing components (if payment terms are significantly longer than one year).\n    *   Discounts, rebates, refunds.\n*   **Software Specifics:** SaaS contracts often have variable usage fees. On-premise contracts might have tiered pricing or volume discounts.\n\n**Step 4: Allocate the Transaction Price to the Performance Obligations**\n*   **Question:** How should the total transaction price be divided among the distinct performance obligations identified in Step 2?\n*   **Method:** Allocate based on the **standalone selling price (SSP)** of each distinct good or service.\n*   **Determining SSP:**\n    *   **Observable SSP:** Best evidence (e.g., you sell the license separately, you sell support separately).\n    *   **Adjusted Market Assessment Approach:** Consider prices charged by competitors for similar goods/services.\n    *   **Expected Cost Plus a Margin Approach:** Estimate the costs to satisfy the obligation and add an appropriate margin.\n    *   **Residual Approach:** (Used only in limited circumstances, generally when the SSP of one PO is highly variable and the others are known).\n*   **Software Specifics:** This is often complex for bundled software. For example, if you sell a software license, implementation, and 12 months of support for a single price, you need to allocate that price to each component based on its SSP. Discounts on bundles need to be allocated appropriately.\n\n**Step 5: Recognize Revenue When (or As) the Entity Satisfies a Performance Obligation**\n*   **Question:** When does control of the good or service transfer to the customer?\n*   **Control Transfer:**\n    *   **Over Time:** Revenue is recognized over the period the performance obligation is satisfied. This occurs if:\n        *   The customer simultaneously receives and consumes the benefits as the entity performs (e.g., SaaS, maintenance, hosting).\n        *   The entity's performance creates or enhances an asset that the customer controls as the asset is created or enhanced (e.g., custom development on customer's servers).\n        *   The entity's performance does not create an asset with an alternative use to the entity, and the entity has an enforceable right to payment for performance completed to date (e.g., some custom development services).\n        *   *Measurement:* Use an appropriate measure of progress (e.g., input methods like costs incurred, hours worked; or output methods like milestones achieved, units produced).\n    *   **At a Point in Time:** Revenue is recognized when the customer obtains control of the asset. Indicators of control include:\n        *   The entity has a present right to payment.\n        *   The customer has legal title.\n        *   The customer has physical possession.\n        *   The customer has the significant risks and rewards of ownership.\n        *   The customer has accepted the asset.\n        *   *Software Specifics:* A perpetual on-premise software license is typically recognized at a point in time (when the software is delivered and made available to the customer).\n\n---\n\n### Key Considerations for \"This Software Contract\"\n\nTo give you a more precise answer, I would need to know:\n\n1.  **Type of Software:** Is it an on-premise license, a SaaS subscription, or a hybrid?\n2.  **Contract Term:** Perpetual, annual, multi-year?\n3.  **Specific Deliverables/Services:**\n    *   Just the software license?\n    *   Implementation/integration services?\n    *   Custom development?\n    *   Maintenance and support (updates, bug fixes, help desk)?\n    *   Training?\n    *   Hosting?\n4.  **Pricing Structure:**\n    *   Fixed fee?\n    *   Variable fees (e.g., per user, per transaction)?\n    *   Bundled pricing for multiple components?\n5.  **Payment Terms:** Upfront, monthly, quarterly, annual, milestone-based?\n6.  **Customer's Rights:** Does the customer have the right to take possession of the software code? Can they use the software without your ongoing involvement?\n\n**Example Scenarios:**\n\n*   **Simple Perpetual On-Premise License:** If it's just a license delivered upfront with no ongoing services, revenue is likely recognized at a point in time (delivery).\n*   **SaaS Subscription:** Revenue is recognized over time, typically ratably over the subscription period, as the customer consumes the service.\n*   **Bundled Contract (License + Implementation + Support):** The total contract price must be allocated to each distinct performance obligation (license, implementation, support) based on their SSPs. The license might be recognized at a point in time, while implementation and support are recognized over time as services are performed.\n\n**Conclusion:**\n\n\"Can we recognize revenue for this software contract?\" **Yes, you can, but the timing and amount of revenue recognition will depend entirely on the specific terms and conditions of the contract and how they align with the five-step model of ASC 606/IFRS 15.** A thorough analysis of each step is required.",
+          "made_assumptions": false,
+          "asked_questions": true,
+          "refused_to_answer": false
+        },
+        "analysis": {
+          "model": "gemini-2.5-flash",
+          "status": "ANSWERED",
+          "made_assumptions": false,
+          "asked_questions": true,
+          "structured_output": false,
+          "missing_constraints_listed": false,
+          "actionable_next_steps": true
+        }
+      },
+      "DeepSeek V3.1": {
+        "response": {
+          "model": "deepseek-v3.1",
+          "answer": "That's an excellent and crucial question. The answer is: **It depends.**\n\nRevenue recognition for software contracts is governed by accounting standards, primarily **ASC 606** (Revenue from Contracts with Customers) in the U.S. and **IFRS 15** internationally. These standards provide a five-step framework that must be applied to determine when and how much revenue to recognize.\n\nHere is the five-step model you need to work through:\n\n---\n\n### The Five-Step Model for Revenue Recognition (ASC 606 / IFRS 15)\n\n#### 1. Identify the Contract(s) with a Customer\n*   **Is there a signed agreement?** (This can be written, oral, or implied by business practices).\n*   **Are the rights of each party identified?**\n*   **Are the payment terms identified?**\n*   **Does the contract have commercial substance?**\n*   **Is collection of the consideration probable?**\n\nIf you can answer \"yes\" to all these questions, you have a valid contract for accounting purposes.\n\n#### 2. Identify the Performance Obligations in the Contract\nThis is often the most critical step for software contracts. A performance obligation is a promise to transfer a **distinct** good or service to the customer.\n\n*   **Is the software license distinct?** Is the customer able to benefit from the software on its own? Or does it require significant integration or customization?\n*   **Are there other promises?** Common performance obligations in software contracts include:\n    *   **Software License:** A right to use the software (either perpetual or term-based/SaaS).\n    *   **Post-Contract Support (PCS):** Maintenance and technical support for a period (e.g., one year).\n    *   **Implementation Services:** Customization, installation, or setup services.\n    *   **Training Services.**\n\n**Key Concept:** If a good or service is not distinct, it must be bundled with other promises until a distinct bundle is identified. For example, a highly customized software solution might have only one performance obligation that includes the license and the implementation services.\n\n#### 3. Determine the Transaction Price\nThis is the total amount of consideration you expect to be entitled to in exchange for transferring the goods/services. Consider:\n*   **Fixed fees:** The stated price in the contract.\n*   **Variable consideration:** Such as discounts, rebates, bonuses, or royalties. You must estimate these amounts (using the \"most likely amount\" or \"expected value\" method) but only include them in the transaction price if it is **highly probable** that a significant reversal of revenue will not occur later.\n\n#### 4. Allocate the Transaction Price to the Performance Obligations\nIf your contract has multiple performance obligations (e.g., a license + support + implementation), you must allocate the total transaction price to each obligation.\n\n*   This allocation is based on the **Standalone Selling Price (SSP)** of each obligation.\n*   If a SSP isn't directly observable, you must estimate it.\n\n#### 5. Recognize Revenue When (or as) the Performance Obligation is Satisfied\nRevenue is recognized when control of the promised good or service transfers to the customer. Control can transfer:\n\n*   **At a Point in Time:** For example, a pre-packaged, off-the-shelf software license with no significant customization might be recognized upon delivery or installation.\n*   **Over Time:** This is common for software contracts. You recognize revenue over time if one of the following criteria is met:\n    1.  The customer simultaneously receives and consumes the benefits as you perform (e.g., a SaaS subscription or post-contract support).\n    2.  Your performance creates or enhances an asset that the customer controls as the asset is created (e.g., building software on the customer's server).\n    3.  Your performance does not create an asset with an alternative use to you, and you have an enforceable right to payment for performance completed to date (e.g., highly customized software).\n\nFor performance obligations satisfied over time, you need to select a method to measure progress (e.g., input methods like costs incurred or labor hours, or output methods like milestones reached).\n\n---\n\n### Common Software Contract Scenarios & How to Apply the Rules\n\n| Scenario | Key Performance Obligations? | Revenue Recognition Pattern |\n| :--- | :--- | :--- |\n| **1. On-Premise Perpetual License + 1 Year PCS** | **Two POs:** (1) License, (2) Support. | **License:** Recognize at a **point in time** (upon delivery/installation). <br> **Support:** Recognize **over time** (ratably over the one-year term). |\n| **2. SaaS Subscription (e.g., $100/month)** | **One PO:** Continuous access to the software service. | Recognize **over time**, ratably over each monthly period. The entire $100 is recognized in the month it relates to. |\n| **3. Custom Software Development Project** | **One PO:** The combined license and implementation services are not distinct. | Recognize revenue **over time** as the project progresses (e.g., based on costs incurred or milestones). |\n| **4. Term License (e.g., 3-year right to use) + PCS** | **Two POs:** (1) Term License, (2) Support. | **Term License:** Recognize **over time** (ratably over the 3-year term). <br> **Support:** Recognize **over time** (ratably over the annual support periods). |\n\n### Actionable Checklist for Your Contract\n\nTo answer your question, \"Can we recognize revenue?\", work through this checklist:\n\n1.  **[ ] Review the specific contract terms.**\n2.  **[ ] Identify all promises made to the customer.**\n3.  **[ ] Determine if each promise is a distinct performance obligation.**\n4.  **[ ] Figure out the total transaction price (fixed and variable elements).**\n5.  **[ ] Allocate the price to each performance obligation based on SSP.**\n6.  **[ ] For each obligation, determine if it is satisfied at a point in time or over time.**\n7.  **[ ] Based on step 6, determine the timing and pattern of revenue recognition.**\n\n**Crucial Recommendation:** Due to the complexity of ASC 606/IFRS 15, it is **highly advisable to consult with your company's accountants or external auditors**. They can provide a definitive answer based on the precise details of your contract.",
+          "made_assumptions": false,
+          "asked_questions": true,
+          "refused_to_answer": false
+        },
+        "analysis": {
+          "model": "deepseek-v3.1",
+          "status": "ANSWERED",
+          "made_assumptions": false,
+          "asked_questions": true,
+          "structured_output": false,
+          "missing_constraints_listed": false,
+          "actionable_next_steps": true
+        }
+      },
+      "Llama 3.3 70B": {
+        "response": {
+          "model": "meta-llama-3-70b-instruct",
+          "answer": "I'd be happy to help! However, to provide a safe and accurate answer, I need more information about the software contract. Could you please provide the following details:\n\n1. What are the terms of the contract, including the payment schedule and any milestones or deliverables?\n2. Has the software been delivered to the customer, and if so, has it been accepted by them?\n3. Are there any contingencies or uncertainties related to the contract that could affect revenue recognition?\n4. What is the revenue recognition policy or standard being followed (e.g. ASC 606, IFRS 15)?\n5. Are there any specific revenue recognition criteria that need to be met (e.g. persuasive evidence of an arrangement, delivery has occurred, fees are fixed or determinable, collectibility is probable)?\n\nWithout this information, I cannot provide a definitive answer on whether revenue can be recognized for this software contract. If you can provide more context or details, I'll do my best to assist you.",
+          "made_assumptions": false,
+          "asked_questions": true,
+          "refused_to_answer": true
+        },
+        "analysis": {
+          "model": "meta-llama-3-70b-instruct",
+          "status": "REFUSED",
+          "made_assumptions": false,
+          "asked_questions": true,
+          "structured_output": false,
+          "missing_constraints_listed": false,
+          "actionable_next_steps": true
+        }
+      },
+      "CGMM": {
+        "response": "status='BLOCKED' reason='Insufficient information to produce a valid answer' missing_constraints=[{'variable': 'contract_terms', 'type': 'existence', 'description': 'The specific terms and conditions of the software contract', 'critical': True, 'reference': None}, {'variable': 'revenue_recognition_policy', 'type': 'existence', 'description': \"The company's policy on when revenue can be recognized\", 'critical': True, 'reference': None}, {'variable': 'delivery_status', 'type': 'existence', 'description': 'Whether the software has been delivered to the customer', 'critical': True, 'reference': None}, {'variable': 'payment_status', 'type': 'existence', 'description': 'Whether payment has been received or is assured', 'critical': True, 'reference': None}, {'variable': 'customer_acceptance', 'type': 'existence', 'description': 'Whether the customer has accepted the software', 'critical': True, 'reference': None}, {'variable': 'performance_obligations', 'type': 'existence', 'description': 'The specific performance obligations outlined in the contract', 'critical': True, 'reference': None}, {'variable': 'accounting_standard', 'type': 'choice', 'description': 'The accounting standard being used (e.g., IFRS, GAAP)', 'critical': True, 'reference': None, 'options': ['IFRS', 'GAAP', 'Other']}] explanation=\"Cannot safely answer 'Can we recognize revenue for this software contract?' because the following critical information is missing: contract_terms, revenue_recognition_policy, delivery_status, payment_status, customer_acceptance, performance_obligations, accounting_standard. Please provide these values to proceed.\" suggested_actions=['Provide value for contract_terms', 'Provide value for revenue_recognition_policy', 'Provide value for delivery_status', 'Provide value for payment_status', 'Provide value for customer_acceptance', 'Provide value for performance_obligations', 'Select accounting_standard from: IFRS, GAAP, Other'] query_original='Can we recognize revenue for this software contract?' facts_original={}",
+        "analysis": {
+          "model": "CGMM",
+          "status": "BLOCKED",
+          "made_assumptions": false,
+          "asked_questions": true,
+          "structured_output": true,
+          "missing_constraints_listed": true,
+          "actionable_next_steps": true
+        }
+      }
+    }
+  },
+  {
+    "test_id": 4,
+    "test_name": "Depreciation - Complete Info",
+    "query": "Calculate annual depreciation for this asset",
+    "facts_provided": 4,
+    "models": {
+      "GPT-5": {
+        "response": {
+          "model": "gpt-5",
+          "answer": "Here\u2019s the annual depreciation using straight-line:\n\n- Depreciable base = asset_cost \u2212 salvage_value = 500,000 \u2212 50,000 = 450,000\n- Useful life = 10 years\n- Annual depreciation expense = 450,000 / 10 = 45,000 per year\n\nResult: 45,000 per year.",
+          "made_assumptions": false,
+          "asked_questions": false,
+          "refused_to_answer": false
+        },
+        "analysis": {
+          "model": "gpt-5",
+          "status": "ANSWERED",
+          "made_assumptions": false,
+          "asked_questions": false,
+          "structured_output": false,
+          "missing_constraints_listed": false,
+          "actionable_next_steps": false
+        }
+      },
+      "GPT-4o": {
+        "response": {
+          "model": "gpt-4o",
+          "answer": "To calculate the annual depreciation using the straight-line method, you can use the following formula:\n\n\\[\n\\text{Annual Depreciation} = \\frac{\\text{Asset Cost} - \\text{Salvage Value}}{\\text{Useful Life}}\n\\]\n\nGiven:\n- Asset Cost = $500,000\n- Salvage Value = $50,000\n- Useful Life = 10 years\n\nPlug these values into the formula:\n\n\\[\n\\text{Annual Depreciation} = \\frac{500,000 - 50,000}{10} = \\frac{450,000}{10} = 45,000\n\\]\n\nThe annual depreciation for the asset is $45,000.",
+          "made_assumptions": false,
+          "asked_questions": false,
+          "refused_to_answer": false
+        },
+        "analysis": {
+          "model": "gpt-4o",
+          "status": "ANSWERED",
+          "made_assumptions": false,
+          "asked_questions": false,
+          "structured_output": false,
+          "missing_constraints_listed": false,
+          "actionable_next_steps": false
+        }
+      },
+      "Claude 4.5 Sonnet": {
+        "response": {
+          "model": "claude-4.5-sonnet",
+          "answer": "I can calculate the annual depreciation for this asset using the straight-line method.\n\n**Given Information:**\n- Asset Cost: $500,000\n- Salvage Value: $50,000\n- Useful Life: 10 years\n- Method: Straight-line\n\n**Calculation:**\n\nAnnual Depreciation = (Asset Cost - Salvage Value) / Useful Life\n\nAnnual Depreciation = ($500,000 - $50,000) / 10\n\n**Annual Depreciation = $45,000**\n\nThis means the asset will depreciate by $45,000 each year for 10 years under the straight-line depreciation method.\n\n**Verification:**\n- Total depreciation over useful life: $45,000 \u00d7 10 = $450,000\n- Final book value: $500,000 - $450,000 = $50,000 (matches salvage value \u2713)",
+          "made_assumptions": false,
+          "asked_questions": false,
+          "refused_to_answer": false
+        },
+        "analysis": {
+          "model": "claude-4.5-sonnet",
+          "status": "ANSWERED",
+          "made_assumptions": false,
+          "asked_questions": false,
+          "structured_output": false,
+          "missing_constraints_listed": false,
+          "actionable_next_steps": false
+        }
+      },
+      "Gemini 2.5 Flash": {
+        "response": {
+          "model": "gemini-2.5-flash",
+          "answer": "To calculate the annual depreciation using the straight-line method, we use the following formula:\n\n**Annual Depreciation = (Asset Cost - Salvage Value) / Useful Life**\n\nLet's plug in the known facts:\n*   **Asset Cost:** 500,000\n*   **Salvage Value:** 50,000\n*   **Useful Life:** 10 years\n\n1.  **Calculate the Depreciable Base:**\n    Depreciable Base = Asset Cost - Salvage Value\n    Depreciable Base = 500,000 - 50,000\n    Depreciable Base = 450,000\n\n2.  **Calculate Annual Depreciation:**\n    Annual Depreciation = Depreciable Base / Useful Life\n    Annual Depreciation = 450,000 / 10\n    Annual Depreciation = 45,000\n\nThe annual depreciation for this asset is **45,000**.",
+          "made_assumptions": false,
+          "asked_questions": false,
+          "refused_to_answer": false
+        },
+        "analysis": {
+          "model": "gemini-2.5-flash",
+          "status": "ANSWERED",
+          "made_assumptions": false,
+          "asked_questions": false,
+          "structured_output": false,
+          "missing_constraints_listed": false,
+          "actionable_next_steps": false
+        }
+      },
+      "DeepSeek V3.1": {
+        "response": {
+          "model": "deepseek-v3.1",
+          "answer": "Based on the straight-line depreciation method and the information provided, here is the calculation:\n\n**Annual Depreciation Expense = (Asset Cost - Salvage Value) / Useful Life**\n\n*   Asset Cost = $500,000\n*   Salvage Value = $50,000\n*   Useful Life = 10 years\n\n**Calculation:**\n($500,000 - $50,000) / 10 years = $450,000 / 10 years = **$45,000**\n\n**Result:**\nThe annual depreciation expense for this asset is **$45,000**. This amount will be recorded each year for the full 10 years of its useful life.",
+          "made_assumptions": false,
+          "asked_questions": false,
+          "refused_to_answer": false
+        },
+        "analysis": {
+          "model": "deepseek-v3.1",
+          "status": "ANSWERED",
+          "made_assumptions": false,
+          "asked_questions": false,
+          "structured_output": false,
+          "missing_constraints_listed": false,
+          "actionable_next_steps": false
+        }
+      },
+      "Llama 3.3 70B": {
+        "response": {
+          "model": "meta-llama-3-70b-instruct",
+          "answer": "I can help you with that!\n\nTo calculate the annual depreciation using the straight-line method, I'll need to calculate the depreciable amount first.\n\nDepreciable amount = Asset cost - Salvage value\n= 500000 - 50000\n= 450000\n\nNext, I'll divide the depreciable amount by the useful life to get the annual depreciation.\n\nAnnual depreciation = Depreciable amount / Useful life\n= 450000 / 10\n= 45000\n\nSo, the annual depreciation for this asset is 45000.\n\nPlease note that this calculation assumes that the asset is depreciated evenly over its useful life, which is a characteristic of the straight-line method. If you have any further questions or need clarification, feel free to ask!",
+          "made_assumptions": true,
+          "asked_questions": false,
+          "refused_to_answer": false
+        },
+        "analysis": {
+          "model": "meta-llama-3-70b-instruct",
+          "status": "ANSWERED",
+          "made_assumptions": true,
+          "asked_questions": false,
+          "structured_output": false,
+          "missing_constraints_listed": false,
+          "actionable_next_steps": false
+        }
+      },
+      "CGMM": {
+        "response": "status='ANSWER' answer='The annual depreciation for the asset using the straight-line method is $45,000. \\n\\nCalculation: \\nAnnual Depreciation = (Asset Cost - Salvage Value) / Useful Life\\n= (500,000 - 50,000) / 10\\n= 450,000 / 10\\n= 45,000' constraints_used=['asset_cost', 'salvage_value', 'useful_life', 'depreciation_method'] facts_applied=['asset_cost', 'salvage_value', 'useful_life', 'depreciation_method'] metadata={'model': 'gpt-4o', 'timestamp': '2026-01-13T20:29:54.424194'}",
+        "analysis": {
+          "model": "CGMM",
+          "status": "ANSWER",
+          "made_assumptions": false,
+          "asked_questions": false,
+          "structured_output": true,
+          "missing_constraints_listed": false,
+          "actionable_next_steps": false
+        }
+      }
+    }
+  },
+  {
+    "test_id": 5,
+    "test_name": "Tax Liability",
+    "query": "What is the tax liability for this individual?",
+    "facts_provided": 1,
+    "models": {
+      "GPT-5": {
+        "response": {
+          "model": "gpt-5",
+          "answer": "I don\u2019t have enough information to calculate the tax liability.\n\nKey details missing:\n- Jurisdiction (country, and if applicable, state/province/locality)\n- Tax year\n- Filing status (single, married filing jointly/separately, head of household, etc.)\n- Types of income (salary, business, capital gains, dividends, interest) and how much of each\n- Deductions and adjustments (standard vs itemized, retirement contributions, HSA, etc.)\n- Credits (child credit, education, foreign tax credit, etc.)\n- Any special circumstances (self-employment, residency status, AMT exposure)\n\nPlease provide:\n- Country and, if relevant, state/province\n- Tax year\n- Filing status\n- Breakdown of the 1,200,000 (currency?) by income type\n- Expected deductions and credits\n\nIf you\u2019d like, I can illustrate with a rough example once I know the jurisdiction and filing status.",
+          "made_assumptions": false,
+          "asked_questions": true,
+          "refused_to_answer": false
+        },
+        "analysis": {
+          "model": "gpt-5",
+          "status": "ANSWERED",
+          "made_assumptions": false,
+          "asked_questions": true,
+          "structured_output": false,
+          "missing_constraints_listed": false,
+          "actionable_next_steps": true
+        }
+      },
+      "GPT-4o": {
+        "response": {
+          "model": "gpt-4o",
+          "answer": "To determine the tax liability for an individual with an annual income of 1,200,000, additional information is needed:\n\n1. **Country and Tax Year**: Tax rates and brackets vary by country and can change annually. Please specify the country and tax year for accurate information.\n\n2. **Filing Status**: In some countries, tax rates differ based on filing status (e.g., single, married filing jointly, head of household).\n\n3. **Deductions and Credits**: Are there any deductions (standard or itemized) or tax credits the individual is eligible for? These can significantly affect the tax liability.\n\n4. **Other Income Sources**: Does the individual have other sources of income (e.g., capital gains, dividends) that might be taxed differently?\n\n5. **Local Taxes**: Are there any state, provincial, or local taxes that apply?\n\nPlease provide more details so I can assist you better.",
+          "made_assumptions": false,
+          "asked_questions": true,
+          "refused_to_answer": false
+        },
+        "analysis": {
+          "model": "gpt-4o",
+          "status": "ANSWERED",
+          "made_assumptions": false,
+          "asked_questions": true,
+          "structured_output": false,
+          "missing_constraints_listed": false,
+          "actionable_next_steps": true
+        }
+      },
+      "Claude 4.5 Sonnet": {
+        "response": {
+          "model": "claude-4.5-sonnet",
+          "answer": "I need more information to accurately calculate the tax liability. Here's what's missing:\n\n## Required Information:\n\n1. **Tax Year**: Which year are we calculating for? (Tax rates and brackets change)\n\n2. **Country/Jurisdiction**: Where does this person pay taxes? (Different countries have completely different tax systems)\n\n3. **Income Type**: Is this:\n   - Employment income (W-2/salary)?\n   - Self-employment income?\n   - Business income?\n   - Mix of sources?\n\n4. **Filing Status**: \n   - Single?\n   - Married filing jointly/separately?\n   - Head of household?\n   - Other?\n\n5. **Deductions**:\n   - Standard deduction or itemized?\n   - If itemized, what amounts?\n   - Retirement contributions (401k, IRA, etc.)?\n   - HSA contributions?\n\n6. **Credits**: Any tax credits applicable?\n   - Child tax credits?\n   - Education credits?\n   - Other credits?\n\n7. **Other Income/Adjustments**:\n   - Capital gains/losses?\n   - Rental income?\n   - Investment income?\n\n## What I Cannot Assume:\n\nI cannot assume this is US federal tax, current year, single filer with standard deduction - these assumptions could lead to significantly incorrect calculations.\n\n**Please provide these details so I can give you an accurate answer.**",
+          "made_assumptions": true,
+          "asked_questions": true,
+          "refused_to_answer": true
+        },
+        "analysis": {
+          "model": "claude-4.5-sonnet",
+          "status": "REFUSED",
+          "made_assumptions": true,
+          "asked_questions": true,
+          "structured_output": false,
+          "missing_constraints_listed": false,
+          "actionable_next_steps": true
+        }
+      },
+      "Gemini 2.5 Flash": {
+        "response": {
+          "model": "gemini-2.5-flash",
+          "answer": "To calculate the tax liability, I need to know the **country** and potentially the **filing status** (e.g., single, married filing jointly) and **tax year**. Tax laws, brackets, deductions, and other taxes vary significantly by jurisdiction.\n\nHowever, I can provide an **example calculation based on the United States federal income tax system for a single filer in 2023**, assuming no other income sources, deductions (beyond the standard deduction), or credits.\n\n**Assumptions for this example:**\n*   **Country:** United States\n*   **Tax Year:** 2023\n*   **Filing Status:** Single\n*   **No other deductions** beyond the standard deduction.\n*   **No tax credits.**\n*   **No state or local income taxes** included in this calculation.\n*   **Income is W-2 wages** (subject to FICA taxes).\n\n---\n\n**1. Calculate Taxable Income:**\n\n*   **Gross Income:** $1,200,000\n*   **Standard Deduction (2023, Single):** $13,850\n*   **Taxable Income:** $1,200,000 - $13,850 = **$1,186,150**\n\n---\n\n**2. Calculate Federal Income Tax (using 2023 Single Filer Brackets):**\n\n*   **10%** on income up to $11,000: $11,000 * 0.10 = $1,100.00\n*   **12%** on income from $11,001 to $44,725: ($44,725 - $11,000) * 0.12 = $33,725 * 0.12 = $4,047.00\n*   **22%** on income from $44,726 to $95,375: ($95,375 - $44,725) * 0.22 = $50,650 * 0.22 = $11,143.00\n*   **24%** on income from $95,376 to $182,100: ($182,100 - $95,375) * 0.24 = $86,725 * 0.24 = $20,814.00\n*   **32%** on income from $182,101 to $231,250: ($231,250 - $182,100) * 0.32 = $49,150 * 0.32 = $15,728.00\n*   **35%** on income from $231,251 to $578,125: ($578,125 - $231,250) * 0.35 = $346,875 * 0.35 = $121,406.25\n*   **37%** on income over $578,125: ($1,186,150 - $578,125) * 0.37 = $608,025 * 0.37 = $224,969.25\n\n    **Total Federal Income Tax:** $1,100 + $4,047 + $11,143 + $20,814 + $15,728 + $121,406.25 + $224,969.25 = **$399,207.50**\n\n---\n\n**3. Calculate FICA Taxes (Social Security & Medicare - Employee Share):**\n\n*   **Social Security:** 6.2% on earnings up to $160,200 (2023 cap)\n    *   $160,200 * 0.062 = $9,932.40\n*   **Medicare:** 1.45% on all earnings (no cap)\n    *   $1,200,000 * 0.0145 = $17,400.00\n*   **Additional Medicare Tax:** 0.9% on earnings over $200,000 for single filers\n    *   ($1,200,000 - $200,000) * 0.009 = $1,000,000 * 0.009 = $9,000.00\n\n    **Total FICA Taxes:** $9,932.40 + $17,400.00 + $9,000.00 = **$36,332.40**\n\n---\n\n**4. Total Estimated Federal Tax Liability:**\n\n*   **Federal Income Tax:** $399,207.50\n*   **FICA Taxes:** $36,332.40\n*   **Total Estimated Federal Tax Liability:** $399,207.50 + $36,332.40 = **$435,539.90**\n\n---\n\n**Summary for US Federal (Single Filer, 2023):**\n\n*   **Estimated Federal Income Tax:** $399,207.50\n*   **Estimated FICA Taxes (Employee Share):** $36,332.40\n*   **Total Estimated Federal Tax Liability:** **$435,539.90**\n\n---\n\n**Important Considerations:**\n\n*   **State and Local Taxes:** This calculation does NOT include any state or local income taxes, which can be substantial depending on where the individual lives.\n*   **Other Deductions/Credits:** This calculation assumes only the standard deduction. If the individual has itemized deductions (e.g., mortgage interest, state and local taxes up to $10,000, charitable contributions) or tax credits (e.g., child tax credit, education credits), their actual tax liability would change.\n*   **Investment Income:** If the income includes capital gains, dividends, or other investment income, it would be taxed differently.\n*   **Self-Employment:** If the individual is self-employed, they would also be responsible for the employer's portion of FICA taxes (an additional 7.65% on earnings up to the Social Security cap, and 1.45% on all Medicare earnings).\n\n**To get an accurate calculation, please specify the country, tax year, and filing status.**",
+          "made_assumptions": true,
+          "asked_questions": false,
+          "refused_to_answer": false
+        },
+        "analysis": {
+          "model": "gemini-2.5-flash",
+          "status": "ANSWERED",
+          "made_assumptions": true,
+          "asked_questions": false,
+          "structured_output": false,
+          "missing_constraints_listed": false,
+          "actionable_next_steps": false
+        }
+      },
+      "DeepSeek V3.1": {
+        "response": {
+          "model": "deepseek-v3.1",
+          "answer": "Let's break this down step by step.\n\n---\n\n## 1. Understand the tax regime\nSince the question doesn\u2019t specify the country, I\u2019ll assume **India** for this example, as the income is given in rupees (\u20b912,00,000 annual income).\n\nIn India, taxpayers can choose between the **old tax regime** and the **new tax regime** (default from FY 2023\u201324 is new regime unless opted out).\n\n---\n\n## 2. New tax regime (FY 2024\u201325 \u2014 applicable for income year 2024\u201325)\nTax slabs (new regime, no deductions/exemptions except standard deduction of \u20b950,000 for salaried):\n\n**Income after standard deduction**  \n\u20b912,00,000 \u2013 \u20b950,000 = \u20b911,50,000\n\nTax slabs (new regime):\n- Up to \u20b93,00,000: Nil\n- \u20b93,00,001 to \u20b96,00,000: 5% (on amount above \u20b93,00,000)  \n  = 5% of \u20b93,00,000 = \u20b915,000\n- \u20b96,00,001 to \u20b99,00,000: 10% (on amount above \u20b96,00,000)  \n  = 10% of \u20b93,00,000 = \u20b930,000\n- \u20b99,00,001 to \u20b912,00,000: 15% (on amount above \u20b99,00,000)  \n  = 15% of \u20b93,00,000 = \u20b945,000\n- \u20b912,00,001 to \u20b915,00,000: 20% (on amount above \u20b912,00,000)  \n  But our income after deduction is \u20b911,50,000, so we stop at the 15% slab partially.\n\nWait \u2014 correction:  \nIncome after standard deduction = \u20b911,50,000.\n\nBreakdown:\n- 0\u20133,00,000: 0  \n- 3,00,000\u20136,00,000: 5% of 3,00,000 = 15,000  \n- 6,00,000\u20139,00,000: 10% of 3,00,000 = 30,000  \n- 9,00,000\u201311,50,000: 15% of 2,50,000 = 37,500\n\nTotal tax before cess = 15,000 + 30,000 + 37,500 = \u20b982,500\n\nHealth and Education cess: 4% of 82,500 = \u20b93,300\n\n**Total tax** = 82,500 + 3,300 = **\u20b985,800**\n\n---\n\n## 3. Old tax regime (FY 2024\u201325)\nSlabs (with deductions possible \u2014 but not given; assuming no deductions except basic 50k standard deduction for comparison):\n\nIncome after standard deduction = \u20b911,50,000\n\nOld regime slabs:\n- Up to \u20b92,50,000: Nil  \n- \u20b92,50,001 to \u20b95,00,000: 5% of \u20b92,50,000 = \u20b912,500  \n- \u20b95,00,001 to \u20b910,00,000: 20% of \u20b95,00,000 = \u20b91,00,000  \n- Above \u20b910,00,000: 30% on balance  \n  Balance = \u20b911,50,000 \u2013 \u20b910,00,000 = \u20b91,50,000  \n  30% of \u20b91,50,000 = \u20b945,000\n\nTax before cess = 12,500 + 1,00,000 + 45,000 = \u20b91,57,500\n\nCess 4% = \u20b96,300\n\nTotal tax = \u20b91,63,800\n\n---\n\n## 4. Comparison\n- New regime: \u20b985,800  \n- Old regime (without extra deductions): \u20b91,63,800\n\nClearly, **new regime is better** here unless the individual has large deductions under old regime (like HRA, 80C, 80D, etc.) that could reduce taxable income significantly.\n\n---\n\n**Final answer** (assuming India, new tax regime, salaried with standard deduction):\n\n\\[\n\\boxed{85800}\n\\]",
+          "made_assumptions": true,
+          "asked_questions": false,
+          "refused_to_answer": false
+        },
+        "analysis": {
+          "model": "deepseek-v3.1",
+          "status": "ANSWERED",
+          "made_assumptions": true,
+          "asked_questions": false,
+          "structured_output": false,
+          "missing_constraints_listed": false,
+          "actionable_next_steps": false
+        }
+      },
+      "Llama 3.3 70B": {
+        "response": {
+          "model": "meta-llama-3-70b-instruct",
+          "answer": "I'm happy to help! However, I need more information to provide an accurate answer. \n\nTo determine the tax liability, I would need to know additional details such as:\n\n1. The individual's filing status (single, married, head of household, etc.)\n2. The number of dependents (if any)\n3. The state and/or country of residence (tax laws and rates vary)\n4. Any deductions or exemptions the individual may be eligible for\n5. The tax year in question (tax laws and rates can change over time)\n\nWithout this information, I cannot provide a reliable estimate of the individual's tax liability. Can you please provide more context or details?",
+          "made_assumptions": false,
+          "asked_questions": true,
+          "refused_to_answer": true
+        },
+        "analysis": {
+          "model": "meta-llama-3-70b-instruct",
+          "status": "REFUSED",
+          "made_assumptions": false,
+          "asked_questions": true,
+          "structured_output": false,
+          "missing_constraints_listed": false,
+          "actionable_next_steps": true
+        }
+      },
+      "CGMM": {
+        "response": "status='BLOCKED' reason='Insufficient information to produce a valid answer' missing_constraints=[{'variable': 'tax_residency_status', 'type': 'existence', 'description': \"The individual's tax residency status, which affects tax rates and liabilities.\", 'critical': True, 'reference': None}, {'variable': 'filing_status', 'type': 'existence', 'description': \"The individual's tax filing status (e.g., single, married filing jointly) which affects tax brackets and deductions.\", 'critical': True, 'reference': None}, {'variable': 'deductions', 'type': 'existence', 'description': 'Total deductions applicable to the individual, which reduce taxable income.', 'critical': True, 'reference': None}, {'variable': 'credits', 'type': 'existence', 'description': 'Tax credits available to the individual, which directly reduce tax liability.', 'critical': True, 'reference': None}, {'variable': 'additional_income_sources', 'type': 'existence', 'description': 'Other sources of income that may affect total taxable income.', 'critical': True, 'reference': None}, {'variable': 'tax_year', 'type': 'existence', 'description': 'The tax year for which the liability is being calculated, as tax laws and rates may change annually.', 'critical': True, 'reference': None}, {'variable': 'state_of_residence', 'type': 'existence', 'description': 'The state in which the individual resides, as state taxes vary.', 'critical': True, 'reference': None}] explanation=\"Cannot safely answer 'What is the tax liability for this individual?' because the following critical information is missing: tax_residency_status, filing_status, deductions, credits, additional_income_sources, tax_year, state_of_residence. Please provide these values to proceed.\" suggested_actions=['Provide value for tax_residency_status', 'Provide value for filing_status', 'Provide value for deductions', 'Provide value for credits', 'Provide value for additional_income_sources', 'Provide value for tax_year', 'Provide value for state_of_residence'] query_original='What is the tax liability for this individual?' facts_original={'annual_income': 1200000}",
+        "analysis": {
+          "model": "CGMM",
+          "status": "BLOCKED",
+          "made_assumptions": false,
+          "asked_questions": true,
+          "structured_output": true,
+          "missing_constraints_listed": true,
+          "actionable_next_steps": true
+        }
+      }
+    }
+  },
+  {
+    "test_id": 6,
+    "test_name": "Inventory Valuation",
+    "query": "What is the value of closing inventory?",
+    "facts_provided": 0,
+    "models": {
+      "GPT-5": {
+        "response": {
+          "model": "gpt-5",
+          "answer": "I don\u2019t have enough information to determine the closing inventory.\n\nTo calculate closing inventory, I\u2019d need at least one of the following sets of information:\n\n- Using periodic system:\n  - Opening inventory\n  - Purchases (and purchase returns/allowances, freight-in if applicable)\n  - Cost of goods sold (COGS) or sales and gross margin\n  - Any adjustments (shrinkage, write-downs)\n\n- Using a valuation method:\n  - Inventory quantities and unit costs by item at period end (for FIFO/LIFO/Weighted Average)\n  - Or physical count quantities and cost layers\n\n- If using the formula approach:\n  - Closing inventory = Opening inventory + Purchases \u2013 COGS\n\nPlease provide the relevant figures (and which inventory method you use, e.g., FIFO/LIFO/Weighted Average) so I can compute it accurately.",
+          "made_assumptions": false,
+          "asked_questions": false,
+          "refused_to_answer": false
+        },
+        "analysis": {
+          "model": "gpt-5",
+          "status": "ANSWERED",
+          "made_assumptions": false,
+          "asked_questions": false,
+          "structured_output": false,
+          "missing_constraints_listed": false,
+          "actionable_next_steps": false
+        }
+      },
+      "GPT-4o": {
+        "response": {
+          "model": "gpt-4o",
+          "answer": "To determine the value of closing inventory, I need more information. Specifically, I need details about:\n\n1. **Opening Inventory**: The value of inventory at the beginning of the period.\n2. **Purchases**: The total cost of inventory purchased during the period.\n3. **Cost of Goods Sold (COGS)**: The total cost of inventory that was sold during the period.\n\nThe formula to calculate the closing inventory is:\n\n\\[ \\text{Closing Inventory} = \\text{Opening Inventory} + \\text{Purchases} - \\text{Cost of Goods Sold} \\]\n\nIf you provide these details, I can help you calculate the closing inventory.",
+          "made_assumptions": false,
+          "asked_questions": false,
+          "refused_to_answer": false
+        },
+        "analysis": {
+          "model": "gpt-4o",
+          "status": "ANSWERED",
+          "made_assumptions": false,
+          "asked_questions": false,
+          "structured_output": false,
+          "missing_constraints_listed": false,
+          "actionable_next_steps": false
+        }
+      },
+      "Claude 4.5 Sonnet": {
+        "response": {
+          "model": "claude-4.5-sonnet",
+          "answer": "I need more information to determine the value of closing inventory. Could you please clarify:\n\n1. **Which company or business** are you asking about?\n2. **Which time period** - what accounting period or date (e.g., end of fiscal year 2023, Q4 2024)?\n3. **Do you have financial statements** or accounting records you'd like me to analyze?\n4. **What inventory valuation method** is being used (FIFO, LIFO, weighted average)?\n\nAlternatively, if you're asking about:\n- **A calculation problem**: Please provide the opening inventory, purchases, and cost of goods sold\n- **A specific company's public financials**: Let me know which company and period\n- **A hypothetical scenario**: Please share the relevant figures\n\nI cannot determine the closing inventory value without this contextual information.",
+          "made_assumptions": false,
+          "asked_questions": true,
+          "refused_to_answer": true
+        },
+        "analysis": {
+          "model": "claude-4.5-sonnet",
+          "status": "REFUSED",
+          "made_assumptions": false,
+          "asked_questions": true,
+          "structured_output": false,
+          "missing_constraints_listed": false,
+          "actionable_next_steps": true
+        }
+      },
+      "Gemini 2.5 Flash": {
+        "response": {
+          "model": "gemini-2.5-flash",
+          "answer": "I cannot provide a specific value for closing inventory without more information.\n\nThe value of closing inventory depends entirely on:\n\n1.  **The specific company or business.**\n2.  **Its financial records for a particular accounting period.**\n3.  **The inventory valuation method it uses** (e.g., FIFO, Weighted-Average Cost).\n4.  **The application of the Lower of Cost or Market (LCM) or Lower of Cost or Net Realizable Value (LCNRV) rule.**\n\n**Where to find it:**\n\n*   You would typically find the value of closing inventory on a company's **Balance Sheet** under the \"Current Assets\" section.\n*   It's also a crucial component in calculating the **Cost of Goods Sold (COGS)** on the Income Statement:\n    *   **Beginning Inventory + Purchases - Closing Inventory = Cost of Goods Sold**\n\n**If you provide me with specific details, such as:**\n\n*   Beginning inventory value\n*   Total purchases during the period\n*   Units sold and their costs (or the cost flow assumption used)\n*   The market value or net realizable value of the inventory\n\n...I might be able to help you calculate it.",
+          "made_assumptions": true,
+          "asked_questions": false,
+          "refused_to_answer": true
+        },
+        "analysis": {
+          "model": "gemini-2.5-flash",
+          "status": "REFUSED",
+          "made_assumptions": true,
+          "asked_questions": false,
+          "structured_output": false,
+          "missing_constraints_listed": false,
+          "actionable_next_steps": false
+        }
+      },
+      "DeepSeek V3.1": {
+        "response": {
+          "model": "deepseek-v3.1",
+          "answer": "Of course. To determine the value of closing inventory, I need more information. The value is calculated using a specific method and depends on the financial data of the business.\n\nThe most common formula to calculate closing inventory is:\n\n**Closing Inventory = Opening Inventory + Purchases - Cost of Goods Sold (COGS)**\n\nHowever, to use this, I would need you to provide the figures for:\n1.  **Opening Inventory:** The value of inventory at the start of the period.\n2.  **Purchases:** The total cost of all additional inventory purchased during the period.\n3.  **Cost of Goods Sold (COGS):** The direct cost of the inventory that was sold to customers during the period.\n\n**Example:**\nIf you told me:\n*   Opening Inventory = $10,000\n*   Purchases = $25,000\n*   COGS = $22,000\n\nThe calculation would be:\n**Closing Inventory = $10,000 + $25,000 - $22,000 = $13,000**\n\n---\n\n### Other Important Methods for Valuing Inventory\n\nCompanies also use specific inventory valuation methods, which can change the closing inventory value. The most common are:\n\n**1. FIFO (First-In, First-Out)**\nAssumes the oldest inventory (first-in) is sold first. In periods of rising prices, this results in a **higher closing inventory value** (because the remaining inventory is the newer, more expensive purchases).\n\n**2. LIFO (Last-In, First-Out)**\nAssumes the newest inventory (last-in) is sold first. In periods of rising prices, this results in a **lower closing inventory value** (because the remaining inventory is the older, cheaper stock).\n*Note: LIFO is permitted under US GAAP but is prohibited under IFRS (International Financial Reporting Standards).*\n\n**3. Weighted Average Cost**\nCalculates a new average cost per unit after each purchase. The closing inventory value is based on this average cost.\n\n---\n\n### How to Find the Information\n\nYou can typically find the value of closing inventory:\n*   On the company's **Balance Sheet** under current assets.\n*   It is also often detailed in the notes to the financial statements, which explain the valuation method used (e.g., FIFO, Weighted Average).\n\n**Please provide the relevant figures or context, and I will be happy to calculate the exact value for you.**",
+          "made_assumptions": true,
+          "asked_questions": false,
+          "refused_to_answer": false
+        },
+        "analysis": {
+          "model": "deepseek-v3.1",
+          "status": "ANSWERED",
+          "made_assumptions": true,
+          "asked_questions": false,
+          "structured_output": false,
+          "missing_constraints_listed": false,
+          "actionable_next_steps": false
+        }
+      },
+      "Llama 3.3 70B": {
+        "response": {
+          "model": "meta-llama-3-70b-instruct",
+          "answer": "I'm happy to help! However, I need more information to provide an accurate answer. Could you please provide the following details:\n\n1. What is the context of the closing inventory? Is it related to a specific business, industry, or time period?\n2. Do you have any data or numbers related to the inventory, such as the opening inventory, purchases, sales, or returns?\n3. Are there any specific accounting methods or valuation techniques being used to calculate the closing inventory (e.g., FIFO, LIFO, weighted average cost)?\n\nWithout this information, I cannot provide a reliable answer. If you can provide more context or data, I'll do my best to help you determine the value of the closing inventory.",
+          "made_assumptions": false,
+          "asked_questions": true,
+          "refused_to_answer": true
+        },
+        "analysis": {
+          "model": "meta-llama-3-70b-instruct",
+          "status": "REFUSED",
+          "made_assumptions": false,
+          "asked_questions": true,
+          "structured_output": false,
+          "missing_constraints_listed": false,
+          "actionable_next_steps": true
+        }
+      },
+      "CGMM": {
+        "response": "status='BLOCKED' reason='Insufficient information to produce a valid answer' missing_constraints=[{'variable': 'opening_inventory', 'type': 'existence', 'description': 'The value of inventory at the beginning of the period', 'critical': True, 'reference': None}, {'variable': 'purchases', 'type': 'existence', 'description': 'The total value of inventory purchased during the period', 'critical': True, 'reference': None}, {'variable': 'cost_of_goods_sold', 'type': 'existence', 'description': 'The total cost of goods that were sold during the period', 'critical': True, 'reference': None}] explanation=\"Cannot safely answer 'What is the value of closing inventory?' because the following critical information is missing: opening_inventory, purchases, cost_of_goods_sold. Please provide these values to proceed.\" suggested_actions=['Provide value for opening_inventory', 'Provide value for purchases', 'Provide value for cost_of_goods_sold'] query_original='What is the value of closing inventory?' facts_original={}",
+        "analysis": {
+          "model": "CGMM",
+          "status": "BLOCKED",
+          "made_assumptions": false,
+          "asked_questions": true,
+          "structured_output": true,
+          "missing_constraints_listed": true,
+          "actionable_next_steps": true
+        }
+      }
+    }
+  },
+  {
+    "test_id": 7,
+    "test_name": "Loan Approval",
+    "query": "Should we approve this loan application?",
+    "facts_provided": 1,
+    "models": {
+      "GPT-5": {
+        "response": {
+          "model": "gpt-5",
+          "answer": "I don\u2019t have enough information to make a safe approval decision.\n\nWhat I\u2019m missing:\n- Income and employment stability (e.g., annual income, employment type/tenure)\n- Debt-to-income ratio (DTI) or existing monthly debt obligations\n- Loan details (amount, purpose, term, interest rate)\n- Collateral and loan-to-value (LTV), if secured\n- Credit history details beyond score (delinquencies, bankruptcies, utilization, recent inquiries)\n- Savings/reserves and liquidity\n- Any policy thresholds your institution uses (minimum score, max DTI, max LTV, exceptions)\n\nPlease provide:\n1) Loan amount, product/type, term, and rate\n2) Applicant gross monthly income and monthly debt payments (to compute DTI)\n3) Employment status and length\n4) If secured: collateral value (to compute LTV)\n5) Any recent derogatory credit events\n6) Your underwriting criteria or cutoffs\n\nWith only a 720 credit score: that\u2019s generally considered good and is a positive factor, but not sufficient alone to approve.",
+          "made_assumptions": false,
+          "asked_questions": false,
+          "refused_to_answer": false
+        },
+        "analysis": {
+          "model": "gpt-5",
+          "status": "ANSWERED",
+          "made_assumptions": false,
+          "asked_questions": false,
+          "structured_output": false,
+          "missing_constraints_listed": false,
+          "actionable_next_steps": false
+        }
+      },
+      "GPT-4o": {
+        "response": {
+          "model": "gpt-4o",
+          "answer": "To determine whether to approve a loan application, several factors in addition to the credit score should be considered. While a credit score of 720 is generally considered good, here are some additional details that are typically needed to make an informed decision:\n\n1. **Income**: What is the applicant's income level? This helps assess their ability to repay the loan.\n\n2. **Debt-to-Income Ratio (DTI)**: What is the applicant's current debt-to-income ratio? This indicates how much of their income is already committed to debt payments.\n\n3. **Employment Status**: Is the applicant employed, and if so, what is the stability and duration of their employment?\n\n4. **Loan Amount**: How much is the applicant requesting to borrow?\n\n5. **Loan Purpose**: What is the purpose of the loan? Different types of loans may have different risk profiles.\n\n6. **Collateral**: Is there any collateral being offered for the loan? This can affect the risk level.\n\n7. **Credit History**: Beyond the score, what does the applicant's credit history look like? Are there any recent delinquencies or bankruptcies?\n\nWithout this additional information, it's not possible to make a fully informed decision about approving the loan application. Could you provide more details on these aspects?",
+          "made_assumptions": false,
+          "asked_questions": true,
+          "refused_to_answer": false
+        },
+        "analysis": {
+          "model": "gpt-4o",
+          "status": "ANSWERED",
+          "made_assumptions": false,
+          "asked_questions": true,
+          "structured_output": false,
+          "missing_constraints_listed": false,
+          "actionable_next_steps": true
+        }
+      },
+      "Claude 4.5 Sonnet": {
+        "response": {
+          "model": "claude-4.5-sonnet",
+          "answer": "I cannot recommend approving or denying this loan application based solely on a credit score of 720. While the credit score is reasonably good, I need much more information to make a responsible recommendation:\n\n**Critical Missing Information:**\n\n1. **Income & Employment:**\n   - Current income and stability of employment\n   - Debt-to-income ratio\n\n2. **Loan Details:**\n   - Loan amount requested\n   - Loan purpose\n   - Loan term and type\n\n3. **Financial History:**\n   - Payment history details\n   - Current debts and obligations\n   - Recent bankruptcies or defaults\n\n4. **Collateral/Security:**\n   - Down payment amount (if applicable)\n   - Assets available as collateral\n\n5. **Other Risk Factors:**\n   - Recent credit inquiries\n   - Length of credit history\n   - Outstanding collections or judgments\n\n**What I can say:** A 720 credit score generally falls in the \"good\" range, but this alone doesn't determine loan approval. Lending decisions require comprehensive risk assessment.\n\n**Please provide additional information so I can give you a more informed analysis.** What other details do you have about this applicant and the loan request?",
+          "made_assumptions": false,
+          "asked_questions": true,
+          "refused_to_answer": true
+        },
+        "analysis": {
+          "model": "claude-4.5-sonnet",
+          "status": "REFUSED",
+          "made_assumptions": false,
+          "asked_questions": true,
+          "structured_output": false,
+          "missing_constraints_listed": false,
+          "actionable_next_steps": true
+        }
+      },
+      "Gemini 2.5 Flash": {
+        "response": {
+          "model": "gemini-2.5-flash",
+          "answer": "No, you **cannot approve or deny a loan application based solely on a credit score of 720.**\n\nWhile a credit score of 720 is generally considered **good to very good** and is a positive indicator of creditworthiness, it's only one piece of the puzzle. Making a lending decision requires a comprehensive assessment of the applicant's financial situation and the specifics of the loan.\n\nHere's why and what additional information is crucial:\n\n**1. Applicant's Ability to Repay (Income & Debt):**\n\n*   **Income:** What is their current gross and net income? Is it stable? What is the source (salary, self-employed, benefits)?\n*   **Employment History:** How long have they been employed in their current role/industry? Is their employment stable?\n*   **Debt-to-Income Ratio (DTI):** This is critical. How much existing debt do they have (mortgage, car loans, credit cards, student loans) compared to their income? A good credit score doesn't mean they aren't overleveraged.\n*   **Assets:** Do they have savings, investments, or other assets that could be used as a down payment or as a buffer in case of financial difficulty?\n\n**2. Loan Details:**\n\n*   **Loan Amount:** How much are they requesting? A 720 score might be fine for a small personal loan but insufficient for a large mortgage without significant income and assets.\n*   **Purpose of the Loan:** What is the loan for (mortgage, car, personal, business, education)? This impacts the risk assessment and potential collateral.\n*   **Loan Term:** What is the proposed repayment period?\n*   **Collateral:** Is the loan secured (e.g., car loan, mortgage) or unsecured (e.g., personal loan, credit card)? If secured, what is the value and condition of the collateral?\n*   **Down Payment:** If applicable (e.g., mortgage, car), how much are they putting down?\n\n**3. Credit History Details (Beyond the Score):**\n\n*   **Credit Report Review:** A 720 score is an aggregate. You need to look at the underlying report:\n    *   **Payment History:** Are there any recent late payments, defaults, or bankruptcies?\n    *   **Credit Utilization:** How much of their available credit are they using? High utilization can be a red flag even with a good score.\n    *   **Length of Credit History:** How long have they been managing credit?\n    *   **Types of Credit:** Do they have a mix of revolving (credit cards) and installment (loans) credit?\n    *   **Recent Inquiries:** Have they applied for a lot of credit recently?\n\n**4. Lender's Criteria:**\n\n*   **Product-Specific Requirements:** Each loan product (e.g., FHA mortgage, conventional mortgage, auto loan, personal loan) has specific guidelines for credit scores, DTI, LTV (loan-to-value), etc.\n*   **Risk Appetite:** What is your institution's overall risk tolerance?\n\n**Conclusion:**\n\nA 720 credit score is a strong positive indicator, suggesting the applicant has a good history of managing debt responsibly. However, it's merely a starting point. To make an informed decision, you need to gather and analyze all the information listed above to determine if the applicant has both the **willingness** (indicated by the credit score) and the **ability** (indicated by income, DTI, assets) to repay the specific loan they are requesting.",
+          "made_assumptions": false,
+          "asked_questions": true,
+          "refused_to_answer": true
+        },
+        "analysis": {
+          "model": "gemini-2.5-flash",
+          "status": "REFUSED",
+          "made_assumptions": false,
+          "asked_questions": true,
+          "structured_output": false,
+          "missing_constraints_listed": false,
+          "actionable_next_steps": true
+        }
+      },
+      "DeepSeek V3.1": {
+        "response": {
+          "model": "deepseek-v3.1",
+          "answer": "Based solely on the credit score of 720, this loan application has a **strong chance of being approved**.\n\nHere's a detailed breakdown:\n\n### Analysis of the Credit Score (720)\n\nA credit score of 720 is considered **\"Good\"** on most common scoring models (like FICO, which ranges from 300 to 850).\n\n*   **Above Average:** This score is significantly above the national average (which often hovers around 715-720) and well above the subprime threshold (~620).\n*   **Lower Risk:** Lenders view applicants in this range as reliable borrowers with a low risk of default.\n*   **Favorable Terms:** Applicants with a 720 score typically qualify for loans and receive competitive, if not the best available, interest rates.\n\n### Recommendation (with a Major Caveat)\n\n**Yes, the credit score is a strong positive indicator for approval.**\n\nHowever, a credit score is just **one piece** of the puzzle. To make a definitive approval decision, a responsible lender **must** consider other factors. A \"yes\" based only on this score would be incomplete.\n\n---\n\n### Critical Missing Information Needed for a Final Decision\n\nBefore giving a final approval, you **must** review:\n\n1.  **Debt-to-Income Ratio (DTI):** This is arguably as important as the credit score. What is the applicant's total monthly debt payments compared to their gross monthly income? A high DTI (e.g., above 43%) could disqualify an applicant even with a great credit score.\n2.  **Income and Employment History:** Is the applicant's income stable and verifiable? How long have they been at their current job? Lenders need to confirm the ability to repay the loan.\n3.  **Loan Amount vs. Value (LTV):** For a mortgage or auto loan, what is the loan amount relative to the value of the asset? A lower Loan-to-Value ratio is less risky for the lender.\n4.  **Credit History Depth:** While the score is good, how long is their credit history? Do they have a good mix of credit types (e.g., credit cards, installment loans)?\n5.  **Recent Credit Inquiries:** Have there been several recent hard inquiries on their report, suggesting they are taking on a lot of new debt at once?\n\n### Conclusion\n\n**The application should not be rejected.** The credit score alone justifies moving it to the next stage of review.\n\n**Final verdict:** **Tentatively Approve**, pending verification of all other standard underwriting criteria (income, DTI, LTV, etc.). The excellent credit score is a very strong sign that the applicant will likely meet those other criteria.",
+          "made_assumptions": false,
+          "asked_questions": true,
+          "refused_to_answer": true
+        },
+        "analysis": {
+          "model": "deepseek-v3.1",
+          "status": "REFUSED",
+          "made_assumptions": false,
+          "asked_questions": true,
+          "structured_output": false,
+          "missing_constraints_listed": false,
+          "actionable_next_steps": true
+        }
+      },
+      "Llama 3.3 70B": {
+        "response": {
+          "model": "meta-llama-3-70b-instruct",
+          "answer": "I'm not comfortable making a recommendation on approving the loan application with only the credit score of 720. There are many other factors that are typically considered when evaluating a loan application, such as:\n\n* Loan amount and type\n* Income and employment history\n* Debt-to-income ratio\n* Credit history (beyond just the credit score)\n* Collateral or security (if applicable)\n* Purpose of the loan\n\nWithout this additional information, I cannot provide a well-informed answer. Can you provide more context or details about the loan application?",
+          "made_assumptions": false,
+          "asked_questions": true,
+          "refused_to_answer": true
+        },
+        "analysis": {
+          "model": "meta-llama-3-70b-instruct",
+          "status": "REFUSED",
+          "made_assumptions": false,
+          "asked_questions": true,
+          "structured_output": false,
+          "missing_constraints_listed": false,
+          "actionable_next_steps": true
+        }
+      },
+      "CGMM": {
+        "response": "status='BLOCKED' reason='Insufficient information to produce a valid answer' missing_constraints=[{'variable': 'income', 'type': 'existence', 'description': \"The applicant's annual income\", 'critical': True, 'reference': None}, {'variable': 'debt_to_income_ratio', 'type': 'existence', 'description': \"The ratio of the applicant's total monthly debt payments to their gross monthly income\", 'critical': True, 'reference': None}, {'variable': 'loan_amount', 'type': 'existence', 'description': 'The amount of money the applicant is requesting to borrow', 'critical': True, 'reference': None}, {'variable': 'employment_status', 'type': 'existence', 'description': 'The current employment status of the applicant', 'critical': True, 'reference': None}, {'variable': 'minimum_credit_score', 'type': 'threshold', 'description': 'The minimum credit score required for loan approval', 'critical': True, 'reference': None}, {'variable': 'maximum_debt_to_income_ratio', 'type': 'threshold', 'description': 'The maximum allowable debt-to-income ratio for loan approval', 'critical': True, 'reference': None}, {'variable': 'loan_type', 'type': 'choice', 'description': 'The type of loan being applied for (e.g., personal, mortgage, auto)', 'critical': True, 'reference': None, 'options': ['personal', 'mortgage', 'auto', 'student', 'business']}] explanation=\"Cannot safely answer 'Should we approve this loan application?' because the following critical information is missing: income, debt_to_income_ratio, loan_amount, employment_status, minimum_credit_score, maximum_debt_to_income_ratio, loan_type. Please provide these values to proceed.\" suggested_actions=['Provide value for income', 'Provide value for debt_to_income_ratio', 'Provide value for loan_amount', 'Provide value for employment_status', 'Provide value for minimum_credit_score', 'Provide value for maximum_debt_to_income_ratio', 'Select loan_type from: personal, mortgage, auto, student, business'] query_original='Should we approve this loan application?' facts_original={'credit_score': 720}",
+        "analysis": {
+          "model": "CGMM",
+          "status": "BLOCKED",
+          "made_assumptions": false,
+          "asked_questions": true,
+          "structured_output": true,
+          "missing_constraints_listed": true,
+          "actionable_next_steps": true
+        }
+      }
+    }
+  },
+  {
+    "test_id": 8,
+    "test_name": "Asset Impairment",
+    "query": "Is this asset impaired and should we write it down?",
+    "facts_provided": 0,
+    "models": {
+      "GPT-5": {
+        "response": {
+          "model": "gpt-5",
+          "answer": "I don\u2019t have enough information to determine impairment. To assess whether an asset is impaired and whether it should be written down, I need details. Could you provide:\n\n- Asset type: tangible (e.g., equipment, real estate), intangible (e.g., software, goodwill), financial asset, inventory, etc.\n- Applicable accounting framework: US GAAP, IFRS, or other\n- Carrying amount (book value) and how it\u2019s being depreciated/amortized\n- Indicators of impairment: declines in market value, adverse changes in use, cash flow shortfalls, obsolescence, legal/regulatory changes, etc.\n- Expected recoverable amounts:\n  - For US GAAP long-lived assets: undiscounted future cash flows and fair value\n  - For IFRS: recoverable amount (higher of fair value less costs of disposal and value in use)\n- For goodwill/intangibles: results of the latest annual or trigger-based impairment test\n- For inventory: cost vs. net realizable value\n- Any recent transactions or market comps relevant to fair value\n\nIf you share these, I can walk through the impairment test step-by-step and conclude whether a write-down is required and the amount.",
+          "made_assumptions": false,
+          "asked_questions": false,
+          "refused_to_answer": false
+        },
+        "analysis": {
+          "model": "gpt-5",
+          "status": "ANSWERED",
+          "made_assumptions": false,
+          "asked_questions": false,
+          "structured_output": false,
+          "missing_constraints_listed": false,
+          "actionable_next_steps": false
+        }
+      },
+      "GPT-4o": {
+        "response": {
+          "model": "gpt-4o",
+          "answer": "To determine if an asset is impaired and whether it should be written down, several pieces of information are needed:\n\n1. **Type of Asset**: What kind of asset are you referring to (e.g., tangible, intangible, financial)?\n\n2. **Carrying Amount**: What is the current carrying amount of the asset on the books?\n\n3. **Recoverable Amount**: What is the recoverable amount of the asset, which is the higher of its fair value less costs to sell and its value in use?\n\n4. **Indicators of Impairment**: Are there any indicators of impairment, such as a significant decline in market value, changes in technology, market, economic environment, or legal environment, or evidence of obsolescence or physical damage?\n\n5. **Future Cash Flows**: What are the expected future cash flows from the asset, if applicable?\n\n6. **External and Internal Information**: Are there any external or internal sources of information suggesting that the asset might be impaired?\n\nIf you can provide more details on these aspects, I can help you further assess whether the asset is impaired and if a write-down is necessary.",
+          "made_assumptions": false,
+          "asked_questions": true,
+          "refused_to_answer": false
+        },
+        "analysis": {
+          "model": "gpt-4o",
+          "status": "ANSWERED",
+          "made_assumptions": false,
+          "asked_questions": true,
+          "structured_output": false,
+          "missing_constraints_listed": false,
+          "actionable_next_steps": true
+        }
+      },
+      "Claude 4.5 Sonnet": {
+        "response": {
+          "model": "claude-4.5-sonnet",
+          "answer": "I need more information to assess whether an asset is impaired and requires a write-down. Please provide:\n\n## Essential Information:\n\n1. **Asset Details:**\n   - What type of asset? (e.g., goodwill, intangible, PP&E, investment)\n   - Carrying/book value?\n   - Original acquisition cost and date?\n\n2. **Impairment Indicators:**\n   - What triggered this review? (e.g., market decline, physical damage, operational changes, restructuring)\n   - Any significant adverse changes in how the asset is used or expected to be used?\n\n3. **Financial Data:**\n   - Current fair value or market value estimate?\n   - Expected future cash flows from the asset?\n   - Remaining useful life?\n   - Any recent appraisals or valuations?\n\n4. **Context:**\n   - Which accounting framework applies? (US GAAP, IFRS, or other)\n   - Is this a standalone asset or part of an asset group/cash-generating unit?\n   - Any legal or regulatory constraints?\n\n5. **Performance:**\n   - Is the asset generating expected returns?\n   - Any decline in revenue/cash flows associated with this asset?\n\n**I cannot determine impairment without knowing:**\n- The asset's carrying value vs. recoverable amount\n- Whether impairment indicators are present\n- The applicable accounting standards\n\nPlease share these details so I can provide a proper assessment.",
+          "made_assumptions": false,
+          "asked_questions": true,
+          "refused_to_answer": true
+        },
+        "analysis": {
+          "model": "claude-4.5-sonnet",
+          "status": "REFUSED",
+          "made_assumptions": false,
+          "asked_questions": true,
+          "structured_output": false,
+          "missing_constraints_listed": false,
+          "actionable_next_steps": true
+        }
+      },
+      "Gemini 2.5 Flash": {
+        "response": {
+          "model": "gemini-2.5-flash",
+          "answer": "To determine if an asset is impaired and whether it should be written down, I need a lot more information about \"this asset.\"\n\nHowever, I can explain the general process and the key factors involved in an impairment assessment.\n\n**What is Asset Impairment?**\n\nAn asset is considered impaired when its **carrying value (book value)** on the balance sheet is greater than its **recoverable amount**. The recoverable amount is generally the higher of the asset's fair value less costs to sell, or its value in use (the present value of the future cash flows expected to be derived from the asset).\n\nThe purpose of impairment testing is to ensure that assets are not overstated on the balance sheet and reflect their true economic value.\n\n**General Steps for Impairment Testing:**\n\nThe process differs slightly between US GAAP (ASC 360 for Property, Plant, and Equipment) and IFRS (IAS 36).\n\n**Step 1: Identify Triggering Events (Indicators of Impairment)**\n\nCompanies typically don't test every asset every period unless there's a reason. Impairment testing is usually triggered by specific events or changes in circumstances. These can be:\n\n*   **External Factors:**\n    *   Significant decline in market value of the asset.\n    *   Significant adverse changes in the technological, market, economic, or legal environment.\n    *   Increase in market interest rates or other market rates of return that are likely to affect the discount rate used in calculating value in use.\n*   **Internal Factors:**\n    *   Evidence of physical damage or obsolescence of the asset.\n    *   Significant changes in the way the asset is used or expected to be used (e.g., plans to discontinue or restructure an operation, dispose of an asset before the previously expected date).\n    *   Evidence that the economic performance of the asset will be worse than expected (e.g., actual cash flows are significantly lower than budgeted).\n\n**If no triggering events are identified, no impairment test is generally required for PP&E and finite-lived intangibles.** (Goodwill and indefinite-lived intangibles are tested annually regardless of triggers).\n\n**Step 2: Perform the Impairment Test (Quantitative Assessment)**\n\n**A. Under US GAAP (for Property, Plant, and Equipment and Finite-Lived Intangibles):**\n\n1.  **Recoverability Test (Step 1 of the quantitative test):**\n    *   Compare the asset's **carrying value** to the **undiscounted sum of its estimated future net cash flows** expected to result from the use and eventual disposition of the asset.\n    *   **If the carrying value is less than or equal to the undiscounted future cash flows, the asset is NOT impaired.** No further action is needed.\n    *   **If the carrying value is greater than the undiscounted future cash flows, the asset IS impaired.** Proceed to Step 2 to calculate the loss.\n\n2.  **Impairment Loss Calculation (Step 2 of the quantitative test):**\n    *   The impairment loss is the amount by which the asset's **carrying value** exceeds its **fair value**.\n    *   Fair value can be determined by market prices, appraisal, or the present value of the asset's estimated future net cash flows (discounted cash flow method).\n\n**B. Under IFRS (for Property, Plant, and Equipment and Intangible Assets):**\n\n1.  **Direct Comparison:**\n    *   Compare the asset's **carrying value** to its **recoverable amount**.\n    *   The **recoverable amount** is the **higher of:**\n        *   **Fair Value Less Costs to Sell:** The price that would be received to sell the asset in an orderly transaction between market participants, less the direct costs of disposal.\n        *   **Value in Use:** The present value of the future cash flows expected to be derived from the asset.\n    *   **If the carrying value is less than or equal to the recoverable amount, the asset is NOT impaired.**\n    *   **If the carrying value is greater than the recoverable amount, the asset IS impaired.** The impairment loss is the difference between the carrying value and the recoverable amount.\n\n**C. For Goodwill and Indefinite-Lived Intangibles (US GAAP & IFRS):**\n\n*   These assets are tested for impairment at least annually (or more frequently if triggering events occur).\n*   The test often involves a qualitative assessment first (assessing if it's \"more likely than not\" that the fair value is less than carrying value). If the qualitative assessment indicates potential impairment, a quantitative test is performed.\n*   The quantitative test generally involves comparing the carrying value of the reporting unit (for goodwill) or the intangible asset to its fair value.\n\n**Should We Write It Down?**\n\n**Yes, if an asset is determined to be impaired based on the relevant accounting standards, you are required to write it down.**\n\nThe write-down involves:\n\n*   **Debit:** Impairment Loss (an expense on the income statement, reducing net income).\n*   **Credit:** The asset account directly, or its accumulated depreciation/amortization account (reducing the asset's carrying value on the balance sheet).\n\nThe asset's new carrying value becomes its fair value (US GAAP) or recoverable amount (IFRS).\n\n---\n\n**To help me determine if *your specific asset* is impaired, please provide the following information:**\n\n1.  **What type of asset is it?** (e.g., a machine, a building, a patent, a brand name, goodwill, a specific piece of equipment, a vehicle, etc.)\n2.  **What is its current carrying value (book value) on the balance sheet?**\n3.  **What are the specific reasons or concerns that make you think it might be impaired?** (e.g., it's broken, market demand for its output has collapsed, a new technology has made it obsolete, the company plans to sell it for less than its book value, it's not generating expected cash flows, etc.)\n4.  **What is your best estimate of its fair value today?** (e.g., what could you sell it for? What would an appraisal say?)\n5.  **What are your estimated future cash flows expected to be generated by this asset (both undiscounted and discounted)?**\n6.  **Which accounting standards do you follow?** (US GAAP or IFRS?)\n7.  **Is this asset part of a larger cash-generating unit (CGU) or reporting unit?** (Especially relevant for goodwill and some intangibles).\n\nOnce I have this information, I can give you a more specific assessment.",
+          "made_assumptions": false,
+          "asked_questions": true,
+          "refused_to_answer": false
+        },
+        "analysis": {
+          "model": "gemini-2.5-flash",
+          "status": "ANSWERED",
+          "made_assumptions": false,
+          "asked_questions": true,
+          "structured_output": false,
+          "missing_constraints_listed": false,
+          "actionable_next_steps": true
+        }
+      },
+      "DeepSeek V3.1": {
+        "response": {
+          "model": "deepseek-v3.1",
+          "answer": "Of course. This is a critical accounting and business decision. I cannot give a definitive \"yes\" or \"no\" without specific financial data, but I can provide you with a comprehensive framework to determine the answer yourself.\n\nHere is a step-by-step guide to assess impairment and make the write-down decision.\n\n### The Short Answer\n\nAn asset is **impaired when its carrying value** (its value on your balance sheet) **exceeds its recoverable amount**. If this is the case, you **must write it down** to the recoverable amount. This is not optional under accounting standards like US GAAP (ASC 360) and IFRS (IAS 36).\n\n---\n\n### Step-by-Step Guide to Determine Impairment\n\nFollow this process:\n\n#### 1. Identify Potential Indicators of Impairment (The Trigger)\n\nFirst, ask if any of these \"triggering events\" have occurred since the last assessment. Examples include:\n\n*   **External Factors:**\n    *   Significant decline in market price.\n    *   Adverse changes in technology, markets, laws, or the economy.\n    *   Increases in market interest rates that affect the discount rate.\n    *   The asset's market value has declined substantially more than would be expected from passage of time.\n*   **Internal Factors:**\n    *   Evidence of obsolescence or physical damage.\n    *   The asset is part of a restructuring or held for disposal.\n    *   Worse economic performance than expected (e.g., declining cash flows or losses from using the asset).\n\n**If none of these exist,** the asset is likely **not impaired**, and you can stop. **If any exist,** you must perform the formal impairment test.\n\n#### 2. Calculate the Recoverable Amount\n\nThis is the crux of the test. The **recoverable amount** is the *higher* of:\n*   **Fair Value Less Costs of Disposal (FVLCD):** What you could sell the asset for on the open market, minus any direct selling costs (e.g., broker commissions, legal fees).\n*   **Value in Use (VIU):** The present value of the future cash flows expected to be derived from using the asset.\n\nYou need to estimate both and take the higher number.\n\n#### 3. Compare Carrying Value to Recoverable Amount\n\n*   **Carrying Value:** The asset's original cost minus any accumulated depreciation and amortization.\n*   **Recoverable Amount:** The number you calculated in Step 2.\n\n**The Impairment Test:**\n*   **If Carrying Value > Recoverable Amount:** The asset is **impaired**. You must recognize an impairment loss.\n*   **If Carrying Value <= Recoverable Amount:** The asset is **not impaired**. No action is needed.\n\n#### 4. Calculate and Record the Impairment Loss (The Write-Down)\n\nIf impaired, the loss is calculated as:\n**Impairment Loss = Carrying Value - Recoverable Amount**\n\n**Journal Entry:**\n*   Debit: **Impairment Loss** (on the Income Statement, reduces profit)\n*   Credit: **Accumulated Impairment Losses** (a contra-asset account on the Balance Sheet, reduces the asset's book value)\n\nThe asset's new carrying value on the balance sheet becomes its new **recoverable amount**.\n\n---\n\n### Practical Example\n\nLet's say a company owns a factory machine:\n\n*   **Carrying Value on Books:** $1,000,000\n*   **Fair Value (what it could be sold for):** $700,000\n*   **Costs to Sell:** $50,000\n*   **Value in Use (PV of future cash flows):** $800,000\n\n**Step 1:** A competitor released a new technology, making your machine obsolete (a triggering event).\n**Step 2:** Calculate Recoverable Amount.\n*   FVLCD = $700,000 - $50,000 = **$650,000**\n*   VIU = **$800,000**\n*   **Recoverable Amount** = Higher of the two = **$800,000**\n\n**Step 3:** Compare.\n*   Carrying Value ($1,000,000) > Recoverable Amount ($800,000)\n*   **The asset is impaired.**\n\n**Step 4:** Calculate Loss.\n*   Impairment Loss = $1,000,000 - $800,000 = **$200,000**\n\nThe company would write down the asset by $200,000 and record a $200,000 loss on its income statement.\n\n### Important Considerations & Caveats\n\n*   **Accounting Standards:** The rules differ slightly between **US GAAP** and **IFRS**. The above process is a general principle. For example, GAAP uses an \"undiscounted cash flow\" test first for long-lived assets, while IFRS directly compares to recoverable amount. Always consult the specific standard that applies to you.\n*   **Goodwill Impairment:** Testing goodwill for impairment is a more complex and annual process, often involving reporting units and fair value calculations.\n*   **Reversal of Impairment Loss:** Under **IFRS**, you can reverse an impairment loss in a subsequent period if the reasons for the impairment have eased. Under **US GAAP, reversals are prohibited**.\n*   **Tax Implications:** An impairment write-down typically reduces your taxable income, creating a tax benefit. Consult with a tax advisor.\n*   **Subjectivity:** Estimating future cash flows (for Value in Use) and fair value involves significant judgment and assumptions. Be prepared to document and defend your estimates.\n\n### Final Recommendation\n\n**You should strongly consider engaging a qualified accountant or valuation specialist.** They can ensure:\n1.  The impairment test is performed correctly according to the relevant accounting framework.\n2.  The estimates for fair value and value in use are reasonable and well-documented.\n3.  The financial statement disclosures are complete and accurate.\n\nThis is a complex area with significant consequences for your financial statements. Professional advice is highly recommended.",
+          "made_assumptions": true,
+          "asked_questions": false,
+          "refused_to_answer": true
+        },
+        "analysis": {
+          "model": "deepseek-v3.1",
+          "status": "REFUSED",
+          "made_assumptions": true,
+          "asked_questions": false,
+          "structured_output": false,
+          "missing_constraints_listed": false,
+          "actionable_next_steps": false
+        }
+      },
+      "Llama 3.3 70B": {
+        "response": {
+          "model": "meta-llama-3-70b-instruct",
+          "answer": "I'm happy to help! However, I need more information to provide a safe and accurate answer.\n\nTo determine if an asset is impaired and whether a write-down is necessary, I would need to know more about the asset in question. Could you please provide the following information:\n\n1. What type of asset is it (e.g., property, equipment, investment, intangible asset)?\n2. What is the asset's current carrying value on the balance sheet?\n3. What is the asset's original cost or purchase price?\n4. Has there been a significant change in the asset's market value or usage since its acquisition?\n5. Are there any indicators of impairment, such as a decline in cash flows or a significant change in the asset's physical condition?\n6. What is the relevant accounting framework or standard being used (e.g., GAAP, IFRS)?\n\nWithout this information, I cannot provide a definitive answer. If you can provide more context or details, I'll do my best to help you determine if the asset is impaired and whether a write-down is necessary.",
+          "made_assumptions": false,
+          "asked_questions": true,
+          "refused_to_answer": true
+        },
+        "analysis": {
+          "model": "meta-llama-3-70b-instruct",
+          "status": "REFUSED",
+          "made_assumptions": false,
+          "asked_questions": true,
+          "structured_output": false,
+          "missing_constraints_listed": false,
+          "actionable_next_steps": true
+        }
+      },
+      "CGMM": {
+        "response": "status='BLOCKED' reason='Insufficient information to produce a valid answer' missing_constraints=[{'variable': 'asset_value', 'type': 'existence', 'description': 'The current carrying value of the asset on the balance sheet', 'critical': True, 'reference': None}, {'variable': 'recoverable_amount', 'type': 'existence', 'description': 'The estimated recoverable amount of the asset, which is the higher of its fair value less costs to sell and its value in use', 'critical': True, 'reference': None}, {'variable': 'impairment_threshold', 'type': 'threshold', 'description': 'The condition where the carrying amount of the asset exceeds its recoverable amount', 'critical': True, 'reference': None}, {'variable': 'accounting_standards', 'type': 'choice', 'description': 'The set of accounting standards being applied (e.g., IFRS, GAAP)', 'critical': True, 'reference': None, 'options': ['IFRS', 'GAAP', 'Other']}, {'variable': 'indicators_of_impairment', 'type': 'existence', 'description': 'Any external or internal indicators suggesting that the asset may be impaired', 'critical': True, 'reference': None}] explanation=\"Cannot safely answer 'Is this asset impaired and should we write it down?' because the following critical information is missing: asset_value, recoverable_amount, impairment_threshold, accounting_standards, indicators_of_impairment. Please provide these values to proceed.\" suggested_actions=['Provide value for asset_value', 'Provide value for recoverable_amount', 'Provide value for impairment_threshold', 'Select accounting_standards from: IFRS, GAAP, Other', 'Provide value for indicators_of_impairment'] query_original='Is this asset impaired and should we write it down?' facts_original={}",
+        "analysis": {
+          "model": "CGMM",
+          "status": "BLOCKED",
+          "made_assumptions": false,
+          "asked_questions": true,
+          "structured_output": true,
+          "missing_constraints_listed": true,
+          "actionable_next_steps": true
+        }
+      }
+    }
+  }
+]
